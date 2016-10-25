@@ -1,0 +1,22 @@
+.jumbotron{
+   font-size:46px; 
+   text-align: center;
+   position: relative; 
+}
+
+div.button{
+     padding:10px;
+     font-size:26px;
+     margin:3px;
+     text-align: center;
+     position:relative;
+     border-style:solid;
+     border-width: 2px;
+}
+
+
+
+a.button{
+     color: #13112b;
+     text-decoration: none;
+}

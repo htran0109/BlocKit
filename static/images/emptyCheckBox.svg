@@ -1,0 +1,18 @@
+<?xml version="1.0"?><svg width="535" height="531" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Empty Check Box</title>
+ <defs>
+  <linearGradient id="linearGradient3996">
+   <stop stop-color="#b8b8b8" id="stop3998" offset="0"/>
+   <stop stop-color="#b8b8b8" stop-opacity="0" id="stop4000" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="1498.8496" x2="-727.92688" y1="1498.8496" x1="-481.63879" gradientTransform="matrix(0.97994177,0,0,1.5038759,-12.092225,-449.52009)" gradientUnits="userSpaceOnUse" id="linearGradient4027" xlink:href="#linearGradient3996"/>
+  <linearGradient y2="1498.8496" x2="-727.92688" y1="1498.8496" x1="-481.63879" gradientTransform="matrix(1.1726642,0,0,1.2567202,-14.470369,-375.64336)" gradientUnits="userSpaceOnUse" id="linearGradient4057" xlink:href="#linearGradient3996"/>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer2">
+   <path fill="none" stroke="#000000" stroke-width="55" stroke-linejoin="round" stroke-miterlimit="4" d="m139.591141,30.025696l252.133347,0c61.025208,0 110.153809,44.742126 110.153809,100.318604l0,271.803711c0,55.576538 -49.128601,100.318604 -110.153809,100.318604l-252.133347,0c-61.0252,0 -110.153801,-44.742065 -110.153801,-100.318604l0,-271.803711c0,-55.576477 49.128601,-100.318604 110.153801,-100.318604z" id="rect2816"/>
+  </g>
+ </g>
+</svg>

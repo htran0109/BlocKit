@@ -16,4 +16,8 @@ $(".checkBox").click(function() {
 	}
 });
 
+$("#webAdd").click(function() {
+	$('#websiteText').val("https://");
+})
+
 

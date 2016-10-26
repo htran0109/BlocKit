@@ -1,0 +1,32 @@
+.jumbotron{
+   font-size:30px; 
+   text-align: center;
+   position: relative; 
+
+}
+
+#header{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+#backButton{
+  text-align: left;
+  text-decoration: none;
+
+}
+
+.title {
+  position: relative;
+  font-family: Verdana;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.input {
+  position: relative;
+  margin-left: 10px;
+}

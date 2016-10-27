@@ -30,6 +30,7 @@
   position:relative;
   margin-left: 10px;
   text-align: left;
+  resize:none;
 }
 
 .dropbtn {
@@ -111,5 +112,9 @@ a.button{
 }
 
 #webAdd {
+  display:inline;
+}
+
+.checkBox {
   display:inline;
 }

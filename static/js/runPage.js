@@ -8,13 +8,6 @@ function showDetails() {
 	document.getElementById("detailDropdown").classList.toggle("show");
 
 }
-function initialize() {
 
-
-	$("#webAdd").click(function() {
-	$('#websiteText').val("https://");
-	});
-
-}
 
 

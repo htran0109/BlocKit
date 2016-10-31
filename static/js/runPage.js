@@ -4,8 +4,8 @@ $(document).ready(function() {
 	initialize();
 })
 
-function showBlocked() {
-	document.getElementById("blockDropdown").classList.toggle("show");
+function showDetails() {
+	document.getElementById("detailDropdown").classList.toggle("show");
 
 }
 function initialize() {

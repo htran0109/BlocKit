@@ -1,0 +1,87 @@
+.jumbotron{
+   font-size:46px; 
+   text-align: center;
+   position: relative; 
+}
+
+div.button{
+     padding:10px;
+     font-size:26px;
+     margin:3px;
+     text-align: center;
+     position:relative;
+     border-style:solid;
+     border-width: 2px;
+}
+
+
+a.button{
+     color: #13112b;
+     text-decoration: none;
+}
+
+div.extra{
+  display:table-cell;
+  width:50%;
+  padding:10px;
+  font-size:26px;
+  margin:10px;
+  text-align: center;
+  position:block;
+  border-style:solid;
+  border-width: 1px;
+}
+
+div.extra-holder{
+
+     margin-left: 10px;
+     margin-top: 20px;
+     text-align: center;
+     position:relative;
+     display: table;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.inner-content {
+  position: relative;
+  display: block;
+  border-width:1px;
+  border-style:solid;
+  margin-bottom: 2px;
+  margin-top:2px;
+  margin-left:10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 3px;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color:black;
+  text-align: left;
+}
+
+.dropbtn:hover{
+  background-color: #f1f1f1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.inner-content:hover {
+  background-color: #f1f1f1;
+};
+
+.show {
+  display:block;
+}

@@ -81,6 +81,7 @@ div.button-holder{
      position:relative;
      width: 300px;
      display: table;
+     margin-bottom: 20px;
 }
 
 div.button {

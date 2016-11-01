@@ -1,3 +1,4 @@
+
 /*For dropdown, when clicked, show websites blocked*/
 
 $(document).ready(function() {
@@ -6,6 +7,10 @@ $(document).ready(function() {
 
 function showDetails() {
 	document.getElementById("detailDropdown").classList.toggle("show");
+
+}
+
+function initialize() {
 
 }
 

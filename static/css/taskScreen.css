@@ -39,7 +39,7 @@
   background-color: #ffffff;
   color: black;
   padding: 3px;
-  width: 280px;
+  width: 300px;
   font-size: 20px;
   border-style: solid;
   border-width: 3px;
@@ -68,7 +68,7 @@
   margin-left:10px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  width:280px;
+  width:300px;
 }
 
 .dropdown-content {
@@ -114,7 +114,7 @@ a.button{
   margin-top:5px;
   margin-bottom:5px;
   margin-left:10px;
-  width:280px;
+  width:300px;
   border-style:solid;
   border-width:1px;
   padding-top:5px;

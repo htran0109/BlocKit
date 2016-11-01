@@ -1,0 +1,132 @@
+.jumbotron{
+   font-size:30px; 
+   text-align: center;
+   position: relative; 
+
+}
+
+#header{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+#backButton{
+  text-align: left;
+  text-decoration: none;
+
+}
+
+.title {
+  position: relative;
+  font-family: Verdana;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+.input {
+  position:relative;
+  margin-left: 10px;
+  font-size: 18px;
+  text-align: left;
+  resize:none;
+  font-weight: bold;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 3px;
+  width: 300px;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color:black;
+  margin-right: 40px;
+  text-align: left;
+}
+
+.dropbtn:hover{
+  background-color: #f1f1f1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.inner-content {
+  position: relative;
+  display: block;
+  border-width:1px;
+  border-style:solid;
+  margin-bottom: 2px;
+  margin-top:2px;
+  margin-left:10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width:300px;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+div.button-holder{
+
+     margin-left: 10px;
+     margin-top: 20px;
+     text-align: center;
+     position:relative;
+     width: 300px;
+     display: table;
+}
+
+div.button {
+  display:table-cell;
+  width:33%;
+  padding:2px;
+  font-size:19px;
+  text-align: center;
+  position:relative;
+  border-style:solid;
+  border-width: 1px;
+}
+
+
+a.button{
+     color: #13112b;
+     text-decoration: none;
+}
+
+.inner-content:hover {
+  background-color: #f1f1f1;
+};
+
+.show {
+  display:block;
+}
+
+.webBox {
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:10px;
+  width:300px;
+  border-style:solid;
+  border-width:1px;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family: Verdana;
+  font-size:14px;
+}
+
+#webAdd {
+  display:inline;
+}
+
+.checkBox {
+  display:inline;
+}

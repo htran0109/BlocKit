@@ -1,21 +1,131 @@
 <html>
 	<head>
-    <h1>
-    	Running Task
-    </h1>
-	</head>
-	<body>
-		Links to pages:<br>
-		<a href = "./homepage.html">
-			Finished with Task!<br></a>
-		<a href = "./editScreen.html">
-			Edit Task<br>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css/bootstrap.min.css" rel = "stylesheet">
+	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/taskScreen.css" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "../css/taskScreen.css"></link>
+<title id = "title">
+		BlocKIT
+	</title>
+	<h1>
+		<div>
+
+			<a href = "./runTask.html" >
+				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
+
+			</img>
 		</a>
-		<a href = "./runTask.html">
-            Cancel Task<br>
-		</a>
+		Running Task...
 
 
+	</div>
+</h1>
+</head>
+<body>
+	<div>
 
-	</body>
+		<textarea readonly rows="1" cols = "40" class = "input" maxlength = "40">Math Homework</textarea>
+	</div>
+	<div>
+		<p class = "title">
+			DUE DATE
+		</p>
+
+		<textarea rows="1" cols = "40" class = "input" maxlength = "40">11/5</textarea>
+	</div>
+	<div>
+		<p class = "title">
+			TIME REMAINING
+		</p>
+
+		<textarea readonly rows="1" cols = "12" class = "input" maxlength = "3">4</textarea>
+		hours:
+		<textarea readonly rows="1" cols = "12" class = "input" maxlength = "2">0</textarea>
+		minutes
+	</div>
+	<div>
+		<p class = "title">
+			NOTES
+		</p>
+
+		<textarea readonly rows="7" cols = "40" class = "input" maxlength = "280">Pages 120-122, Problems 21 - 30, 40 - 45</textarea>
+	</div>
+	<div>
+		<p class = "title">
+			BLOCKED WEBSITES
+		</p>
+		<div class = "dropdown">
+			<button onclick = "showBlocked()"
+			class = "dropbtn">5 Blocked
+			<img src = "../images/dropDown.png" style = "width:20;height:20px;">
+		</img>
+	</button>
+</div>
+
+<div id = "blockDropdown" class = "dropdown-content">
+	<div class = "inner-content" id = "websiteOne">
+		Facebook.com
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input readonly class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+<div class = "inner-content">
+	Twitter.com
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input readonly class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+<div class = "inner-content">
+	Reddit.com
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input readonly class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+<div class = "inner-content">
+	Youtube.com
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input readonly class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+<div class = "inner-content">
+	9gag.com
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input readonly class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+</div>
+</div>
+
+
+<div class = "button-holder">
+
+	<div  class = "button">
+	<a href = "./runTask.html" class = "button">
+		Task Menu</a>
+	</div>
+	<div  class = "button">
+	<a href = "./editScreen.html" class = "button">
+		Edit Task</a>
+	</div>
+	<div class = "button">
+    <a href = "./homepage.html" class = "button">
+    	I Finished!</a>
+	</div>
+
+</div>
+
+	<script src="https://code.jquery.com/jquery.js">
+	</script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/createTask.js"></script>
+</body>
 </html>
+

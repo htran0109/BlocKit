@@ -3,15 +3,20 @@
 
 $(document).ready(function() {
 	initialize();
+	console.log("script loaded");
 })
 
-function showDetails() {
-	document.getElementById("detailDropdown").classList.toggle("show");
+function showDetails(extra) {
+	console.log(extra);
+	extra.classList.toggle("show");
 
 }
 
 function initialize() {
-
+	/*$("button").click(function(event)){
+		console.log("detailDropdown" + event.target.id);
+		document.getElementById("detailDropdown" + event.target.id).classList.toggle("show");
+	});*/
 }
 
 

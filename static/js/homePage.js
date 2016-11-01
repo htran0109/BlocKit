@@ -14,9 +14,6 @@ function initialize() {
 		}
 	});
 	$("#runText").on({
-		"click" : function() {
-			runPage.runPage();
-		},
 		"mouseover": function() {
 			document.getElementById("runText").style.fontSize = "30px";
 		},

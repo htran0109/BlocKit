@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.static(__dirname + '/static'));
 
 app.get('/', index.view);
-app.get('/', runPage.runPage);
+app.get('/runPage', runPage.runPage);
 
 
 // Start the server

@@ -2,15 +2,19 @@
   "tasks": [
     {
     	"title": "Math Homework",
+        "id": "task1",
+        "dropDown": "detailDropdown1",
     	"due_date": "11/5",
-    	"time" : "240",
+    	"time" : 240,
     	"notes" : "Pages 120-122, Problems 21 - 30, 40 - 45"
 
     },
     {
     	"title": "Philosophy Essay Final Draft",
+        "id": "task2",
+        "dropDown": "detailDropdown2",
         "due_date": "11/11",
-        "time" : "360",
+        "time" : 360,
         "notes" : "See lecture slides, readings week 4-5"
     }
 

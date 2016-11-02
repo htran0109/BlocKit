@@ -1,4 +1,5 @@
-var data = require('../static/json_data/data.json');
+
+var data = require('../static/json_data/oldTasks.json');
 
 exports.view = function(req, res){
 	//grab the taskNumber to be shown
@@ -7,7 +8,7 @@ exports.view = function(req, res){
 	console.log(taskNumber);
 	console.log(data);
 	console.log(data.tasks[taskNumber]);
-	res.render('taskScreen', data.tasks[taskNumber]);
+	res.render('taskReview', data.tasks[taskNumber]);
 	
 	
 };

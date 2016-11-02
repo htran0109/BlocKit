@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+    	"title": "Old Math Homework",
+        "id": "task1",
+        "number": 0,
+        "dropDown": "detailDropdown1",
+    	"due_date": "11/5",
+    	"hours" : 4,
+        "minutes" : 0,
+    	"notes" : "Pages 120-122, Problems 21 - 30, 40 - 45"
+
+    },
+    {
+    	"title": "CSE Final Exam",
+        "id": "task2",
+        "number": 1,
+        "dropDown": "detailDropdown2",
+        "due_date": "11/11",
+        "hours" : 3,
+        "minutes" : 30,
+        "notes" : "Reread programming assignments"
+    },
+    {
+        "title": "Resume Building",
+        "id": "task3",
+        "number": 2,
+        "dropDown": "detailDropdown3",
+        "due_date": "12/3",
+        "hours" : 2,
+        "minutes" : 40,
+        "notes" : "Prepare for career fair"
+    }
+  ]
+
+}

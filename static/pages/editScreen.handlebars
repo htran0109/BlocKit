@@ -12,7 +12,7 @@
 	<h1>
 		<div>
 
-			<a href = "/pages/taskScreen.html" >
+			<a href = "taskScreen/{{number}}" >
 				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
 
 			</img>
@@ -29,23 +29,23 @@
 			TASK NAME
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40">Math Homework</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40">{{title}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40">11/5</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40">{{due_date}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
 			TASK DURATION
 		</p>
 
-		<textarea rows="1" cols = "12" class = "input" maxlength = "3">4</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3">{{hours}}</textarea>
 		hours:
-		<textarea rows="1" cols = "12" class = "input" maxlength = "2">0</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2">{{minutes}}</textarea>
 		minutes
 	</div>
 	<div>
@@ -53,7 +53,7 @@
 			NOTES
 		</p>
 
-		<textarea rows="7" cols = "37" class = "input" maxlength = "280">Pages 120-122, Problems 21 - 30, 40 - 45</textarea>
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280">{{notes}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
@@ -118,7 +118,7 @@
 		Exit Task</a>
 	</div>
 	<div  class = "button";>
-	<a href = "/pages/taskScreen.html" class = "button">
+	<a href = "/taskScreen/{{number}}" class = "button">
 		Return to Task</a>
 	</div>
 

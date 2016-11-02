@@ -27,23 +27,23 @@
 <body>
 	<div>
 
-		<textarea readonly rows="1" cols = "34" class = "input" maxlength = "40">Math Homework</textarea>
+		<textarea readonly rows="1" cols = "34" class = "input" maxlength = "40">{{title}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "34" class = "input" maxlength = "40">11/5</textarea>
+		<textarea rows="1" cols = "34" class = "input" maxlength = "40">{{due_date}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
 			TIME REMAINING
 		</p>
 
-		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "3">4</textarea>
+		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "3">{{hours}}</textarea>
 		hours:
-		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "2">0</textarea>
+		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "2">{{minutes}}</textarea>
 		minutes
 	</div>
 	<div>
@@ -51,7 +51,7 @@
 			NOTES
 		</p>
 
-		<textarea readonly rows="7" cols = "34" class = "input" maxlength = "280">Pages 120-122, Problems 21 - 30, 40 - 45</textarea>
+		<textarea readonly rows="7" cols = "34" class = "input" maxlength = "280">{{notes}}</textarea>
 	</div>
 	<div>
 		<p class = "title">
@@ -112,7 +112,7 @@
 		Task Menu</a>
 	</div>
 	<div  class = "button">
-	<a href = "/pages/editScreen.html" class = "button">
+	<a href = "/editScreen/{{number}}" class = "button">
 		Edit Task</a>
 	</div>
 	<div class = "button">

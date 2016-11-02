@@ -8,7 +8,7 @@ exports.view = function(req, res){
 	console.log(taskNumber);
 	console.log(data);
 	console.log(data.tasks[taskNumber]);
-	res.render('taskScreen', data.tasks[taskNumber]);
+	res.render('editScreen', data.tasks[taskNumber]);
 	
 	
 };

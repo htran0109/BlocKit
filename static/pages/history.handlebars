@@ -1,0 +1,87 @@
+<html>
+<head>
+	<h1>
+		<title>BlocKIT</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../css/bootstrap.min.css" rel = "stylesheet">
+		<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="../css/runPage.css" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "../css/runPage.css"></link>
+	</h1>
+</head>
+<body>
+	<div>
+		<h1 class = "jumbotron">Tasks Completed</h1>
+	</div>
+	{{#each tasks}}
+	<div class = "button" id = "{{id}}">
+		<a class = "button" id = "{{id}}Text">
+			{{title}}</a>
+			<br>
+			<div class = "extra-holder">
+
+				<div  class = "extra">
+					<div class = "dropdown">
+						<button onclick = "showDetails({{dropDown}})"
+						class = "dropbtn">Details
+						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
+					</img>
+				</button>
+
+			</div>
+		</div>
+		<div class = "extra">
+			<a href = "/taskReview/{{number}}" class = "button">
+				Start
+			</a>
+		</div>
+
+	</div>
+	<div id = "{{dropDown}}" class = "dropdown-content">
+		<div class = "inner-content">
+			{{notes}}
+		</div>
+
+	</div>
+	</div>
+	{{/each}}
+	<!--<div class = "button" id = "task1">
+		<a class = "button" id = "task1Text">
+			Math Homework, Due 11/5, Will take 4 hours, 0 Minutes</a>
+			<br>
+			<div class = "extra-holder">
+
+				<div  class = "extra">
+					<div class = "dropdown">
+						<button onclick = "showDetails()"
+						class = "dropbtn">Details
+						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
+					</img>
+				</button>
+
+			</div>
+		</div>
+		<div class = "extra">
+			<a href = "/pages/taskScreen.html" class = "button">
+				Start
+			</a>
+		</div>
+
+	</div>
+	<div id = "detailDropdown" class = "dropdown-content">
+		<div class = "inner-content">
+			Pages 120-122, Problems 21 - 30, 40 - 45
+		</div>
+
+	</div>
+	</div>-->
+	<div class = "button">
+		<a class ="button" href = "/pages/homepage.html"> Back To Home </a>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src = "../js/runPage.js"></script>
+</body>
+</html>

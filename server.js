@@ -9,6 +9,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var runPage = require('./routes/runPage');
+var taskScreen = require('./routes/taskScreen');
 // Create the server instance
 var app = express();
 
@@ -34,7 +35,8 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.static(__dirname + '/static'));
 
 app.get('/', index.view);
-app.get('/runPage', runPage.runPage);
+app.get('/runPage', runPage.view);
+app.get('/taskScreen/:taskNumber', taskScreen.view);
 
 
 // Start the server

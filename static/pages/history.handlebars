@@ -14,6 +14,14 @@
 	<div>
 		<h1 class = "jumbotron">Tasks Completed</h1>
 	</div>
+	
+	<ul class="topnav" id="myTopnav">
+
+	<li><a href="runTask.handlebars">To Do</a></li>
+	<li><a href="history.handlebars">Completed</a></li>
+
+	</ul>
+	
 	{{#each tasks}}
 	<div class = "button" id = "{{id}}">
 		<a class = "button" id = "{{id}}Text">

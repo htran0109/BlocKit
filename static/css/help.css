@@ -12,6 +12,7 @@ h1{
 body{
 	padding: 10px;
 	font-size:18px;
+	font-family: Montserrat;
 }
 
 div.button{
@@ -41,6 +42,7 @@ button.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
+	font-family: Montserrat;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -85,3 +87,11 @@ button.accordion:after {
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+/*
+h1{
+	font-family: Montserrat;
+}
+
+p{
+	font-family: Montserrat;
+}*/

@@ -8,6 +8,8 @@
 		<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="../css/runPage.css" rel="stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "../css/runPage.css"></link>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 	</h1>
 </head>
 <body>
@@ -25,7 +27,17 @@
 	{{#each tasks}}
 	<div class = "button" id = "{{id}}">
 		<a class = "button" id = "{{id}}Text">
-			{{title}}, Due: {{due_date}}, Will Take <br>{{hours}} Hours, {{minutes}} minutes</a>
+			{{title}}, Due: {{due_date}}, Duration: {{hours}} Hours, {{minutes}} minutes
+			</a>
+			<a href = "/editScreen/{{number}}" class = "button">
+					<i class ="fa fa-edit">
+			</a>
+			<a href = "/editScreen/{{number}}" class = "button">
+					<i class ="fa fa-trash-o">
+			</a>
+			
+
+				
 			<br>
 			<div class = "extra-holder">
 

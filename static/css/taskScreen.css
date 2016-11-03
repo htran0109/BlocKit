@@ -1,6 +1,10 @@
 #appHeader{
-	background-color:ececec;
-	font-family: Montserrat;
+  background-color:ececec;
+  font-family: Montserrat;
+}
+
+.fontChange{
+  font-family: Montserrat;
 }
 
 #header{

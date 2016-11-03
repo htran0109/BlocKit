@@ -2,6 +2,7 @@
    font-size:46px; 
    text-align: center;
    position: relative; 
+   font-family: Montserrat;
 }
 
 div.button{
@@ -19,4 +20,5 @@ div.button{
 a.button{
      color: #13112b;
      text-decoration: none;
+	 font-family: Montserrat;
 }

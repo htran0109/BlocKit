@@ -1,8 +1,6 @@
-.jumbotron{
-   font-size:30px; 
-   text-align: center;
-   position: relative; 
-
+#appHeader{
+	background-color:ececec;
+	font-family: Montserrat;
 }
 
 #header{
@@ -15,6 +13,10 @@
   text-align: left;
   text-decoration: none;
 
+}
+
+.fontChange{
+	font-family: Montserrat;
 }
 
 .title {

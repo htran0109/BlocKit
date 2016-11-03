@@ -4,6 +4,34 @@
    position: relative; 
 }
 
+ul.topnav {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+ul.topnav li {
+    display: inline;
+    list-style: none; 
+}
+ul.topnav li a:link,a:visited
+{
+    display:inline-block;
+    margin-right: -4px;
+    width:120px;
+    color:#000000;
+    background-color:#eeeeee;
+    text-align:center;
+    padding:8px;
+    text-decoration:none;
+}
+ul.topnav li a:hover, a:active
+{
+    background-color:#1a1a1a;
+	color: #ffffff;
+}
+
+
+
 div.button{
      background-color: #D3D3D3;
      padding:5px;

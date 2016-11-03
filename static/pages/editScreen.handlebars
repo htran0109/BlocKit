@@ -10,7 +10,7 @@
 		BlocKIT
 	</title>
 	<h1>
-		<div>
+		<div id="appHeader">
 
 			<a href = "/taskScreen/{{number}}" >
 				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
@@ -25,49 +25,49 @@
 </head>
 <body>
 	<div>
-		<p class = "title">
+		<p class = "title fontChange">
 			TASK NAME
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40">{{title}}</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange">{{title}}</textarea>
 	</div>
 	<div>
-		<p class = "title">
+		<p class = "title fontChange">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40">{{due_date}}</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange">{{due_date}}</textarea>
 	</div>
 	<div>
-		<p class = "title">
+		<p class = "title fontChange">
 			TASK DURATION
 		</p>
 
-		<textarea rows="1" cols = "12" class = "input" maxlength = "3">{{hours}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange">{{hours}}</textarea>
 		hours:
-		<textarea rows="1" cols = "12" class = "input" maxlength = "2">{{minutes}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange">{{minutes}}</textarea>
 		minutes
 	</div>
 	<div>
-		<p class = "title">
+		<p class = "title fontChange">
 			NOTES
 		</p>
 
-		<textarea rows="7" cols = "37" class = "input" maxlength = "280">{{notes}}</textarea>
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange">{{notes}}</textarea>
 	</div>
 	<div>
-		<p class = "title">
+		<p class = "title fontChange">
 			BLOCKED WEBSITES
 		</p>
 		<div class = "dropdown">
 			<button onclick = "showBlocked()"
-			class = "dropbtn">5 Blocked
+			class = "dropbtn fontChange">5 Blocked
 			<img src = "/images/dropDown.png" style = "width:20;height:20px;">
 		</img>
 	</button>
 </div>
 
-<div id = "blockDropdown" class = "dropdown-content">
+<div id = "blockDropdown" class = "dropdown-content fontChange">
 	<div class = "inner-content" id = "websiteOne">
 		Facebook.com
 			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
@@ -107,18 +107,18 @@
 </div>
 
 <div class = "webBox">
-	<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100">https://</textarea>
-	<button id = "webAdd"><strong>ADD</strong></button>
+	<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100" class="fontChange">https://</textarea>
+	<button id = "webAdd" class="fontChange"><strong>ADD</strong></button>
 </div>
 
 <div class = "button-holder">
 
 	<div  class = "button";>
-	<a href = "/runPage" class = "button">
+	<a href = "/runPage" class = "button fontChange">
 		Exit Task</a>
 	</div>
 	<div  class = "button";>
-	<a href = "/taskScreen/{{number}}" class = "button">
+	<a href = "/taskScreen/{{number}}" class = "button fontChange">
 		Return to Task</a>
 	</div>
 

@@ -1,12 +1,11 @@
-.jumbotron{
-   font-size:46px; 
-   text-align: center;
-   position: relative; 
+#appHeader{
+	background-color:ececec;
+	font-family: Montserrat;
 }
 
 h1{
-	padding: 10px;
-	font-family:Verdana;
+	font-family:Montserrat;
+	padding-bottom: 10px;
 }
 
 body{

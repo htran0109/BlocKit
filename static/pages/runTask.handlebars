@@ -12,10 +12,10 @@
 </head>
 <body>
 	<div>
-		<h1 class = "jumbotron">Tasks</h1>
+		<h1 class = "jumbotron fontChange">Tasks</h1>
 	</div>
 	
-	<ul class="topnav" id="myTopnav">
+	<ul class="topnav fontChange" id="myTopnav">
 
 	<li><a href="/runPage">To Do</a></li>
 	<li><a href="/history">Completed</a></li>
@@ -24,7 +24,7 @@
 	
 	{{#each tasks}}
 	<div class = "button" id = "{{id}}">
-		<a class = "button" id = "{{id}}Text">
+		<a class = "button fontChange" id = "{{id}}Text">
 			{{title}}, Due: {{due_date}}, Will Take <br>{{hours}} Hours, {{minutes}} minutes</a>
 			<br>
 			<div class = "extra-holder">
@@ -32,7 +32,7 @@
 				<div  class = "extra">
 					<div class = "dropdown">
 						<button onclick = "showDetails({{dropDown}})"
-						class = "dropbtn">Details
+						class = "dropbtn fontChange">Details
 						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
 					</img>
 				</button>
@@ -40,14 +40,14 @@
 			</div>
 		</div>
 		<div class = "extra">
-			<a href = "/taskScreen/{{number}}" class = "button">
+			<a href = "/taskScreen/{{number}}" class = "button fontChange">
 				Start
 			</a>
 		</div>
 
 	</div>
-	<div id = "{{dropDown}}" class = "dropdown-content">
-		<div class = "inner-content">
+	<div id = "{{dropDown}}" class = "dropdown-content fontChange">
+		<div class = "inner-content fontChange">
 			{{notes}}
 		</div>
 
@@ -85,7 +85,7 @@
 	</div>
 	</div>-->
 	<div class = "button">
-		<a class ="button" href = "/pages/homepage.html"> Back To Home </a>
+		<a class ="button fontChange" href = "/pages/homepage.html"> Back To Home </a>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>

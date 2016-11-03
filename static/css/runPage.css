@@ -4,6 +4,10 @@
    position: relative; 
 }
 
+.fontChange{
+	font-family: Montserrat;
+}
+
 ul.topnav {
     margin: 0;
     padding: 0;

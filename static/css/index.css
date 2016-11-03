@@ -1,16 +1,21 @@
+.jumbotron{
+   font-size:46px; 
+   text-align: center;
+   position: relative; 
+   font-family: Montserrat;
+}
+
 h1{
-	font-family: Verdana;
-	text-align: center;
-	margin-bottom: 75px;
-	font-size: 500%;
+	font-family: Montserrat;
 }
 
 p{
-	font-family: Verdana;
+	font-family: Montserrat;
 }
 
 a{
-	font-family: Verdana;
+	font-family: Montserrat;
+	color: #13112b;
 }
 
 .nonWorking{
@@ -21,11 +26,12 @@ body{
 	text-align: center;
 }
 
-.btn-outline-primary{
-	outline-color: black;
-	color: black;
-	background-color: white;
-	border-color: black;
-	margin-top: 50px;
-	margin-bottom: 10px;
+div.button{
+     padding: 5px;
+     font-size:26px;
+     margin: 50px 70px 0px 70px;
+     text-align: center;
+     position:relative;
+     border-style:solid;
+     border-width: 2px;
 }

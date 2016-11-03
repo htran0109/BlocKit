@@ -5,19 +5,59 @@
 		<link href="/css/bootstrap.min.css" rel = "stylesheet">
 		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="/css/help.css" rel="stylesheet">
-		<link rel = "stylesheet" type = "text/css" href = "/css/help.css"></link>
-    <h1 class = "jumbotron">
-    	Help Screen
-    </h1>
+		<link rel = "stylesheet" type = "text/css" href = "../css/help.css"></link>
+    
+
 	</head>
 	<body>
+		<div><h1 class = "jumbotron">Help</h1></div>
+		
 		<h1>About</h1>
 		<p>This app is designed to help you finish your homework faster!</p>
-		<h1>To Start</h1>
-		<p>To begin using the app, click on Create a Task. Then, fill in the information for the work you need to complete.</p>
-		<p>This task will then show up in the Run a Task Menu!</p>
+		<p><h3>To Begin: </h3></p>
+		<p>Click on Create Task. Then, fill in the information for the work you need to complete.</p>
+		<p>This task will then show up in the Task page!</p>
 		<p>Just click start to block those pesky distractions, and you'll be ready to finish off your work!</p><br>
 		<p><strong>Good Luck, you got this!</strong></p><br>
+		
+		
+		<h1>FAQ</h1>
+			<button class="accordion">What does BlocKIT do?</button>
+			<div class="panel">
+			  <p>BlocKIT blocks out your distractions so that you can stay focused on completing your tasks.
+			   You will be able to create tasks with customized blocked websites, so when you start the task,
+			   those distracting websites will be blocked until either the timer runs out or you finish your task.</p>
+			</div>
+
+			<button class="accordion">How do I create a task?</button>
+			<div class="panel">
+			  <p>The Create Task button on the home screen will take you to another screen to input your task’s name,
+			   due date, time duration, notes, and customize the blocked websites. The “Create!” button will finish creating the task.</p>
+			</div>
+
+			<button class="accordion">How do I start/run a task?</button>
+			<div class="panel">
+			  <p>The Task page will contain a list of your created tasks. There, you can select a task to run.</p>
+			</div>
+		
+		
+			<button class="accordion">What does running a task do?</button>
+			<div class="panel">
+			 <p>Running a task will block the websites you customized for that task for the duration of the 
+			 time you set for that specific task.</p>
+			</div>
+		
+			<button class="accordion">What do I do when I finish my task but my timer is still running?</button>
+			<div class="panel">
+			 <p>You can manually stop the timer when you finish your task, which will then unblock your websites.</p>
+			</div>
+			
+			<button class="accordion">Where do I go to set my default blocked websites?</button>
+			<div class="panel">
+			 <p>You can go to the Settings page to customize the default blocked websites.</p>
+			</div>
+			
+		
 		<div class = "button">
 		<a href = "/pages/homepage.html" class = "button">
 			Back
@@ -25,7 +65,17 @@
 	</div>
 		
 
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function(){
+			this.classList.toggle("active");
+			this.nextElementSibling.classList.toggle("show");
+	  }
+	}
+	</script>
 
 	</body>
 </html>

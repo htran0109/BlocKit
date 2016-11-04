@@ -14,6 +14,7 @@ var editScreen = require('./routes/editScreen');
 var history = require('./routes/historyPage');
 var reviewScreen = require('./routes/reviewScreen');
 var createScreen = require('./routes/createTask');
+var settings = require('./routes/settings')
 // Create the server instance
 var app = express();
 
@@ -45,6 +46,7 @@ app.get('/editScreen/:taskNumber', editScreen.view);
 app.get('/history', history.view);
 app.get('/review/:taskNumber', reviewScreen.view);
 app.get('/createTask', createScreen.view);
+app.get('/settings', settings.view)
 
 
 // Start the server

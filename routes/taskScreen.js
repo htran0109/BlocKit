@@ -7,7 +7,9 @@ exports.view = function(req, res){
 	console.log(taskNumber);
 	console.log(data);
 	console.log(data.tasks[taskNumber]);
-	res.render('taskScreen', data.tasks[taskNumber]);
+	var newData = data.tasks[taskNumber];
+	newData.websites = data.websites;
+	res.render('taskScreen', newData);
 	
 	
 };

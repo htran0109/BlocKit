@@ -68,41 +68,15 @@
 </div>
 
 <div id = "blockDropdown" class = "dropdown-content fontChange">
+	{{#each websites}}
 	<div class = "inner-content" id = "websiteOne">
-		Facebook.com
+		{{title}}
 			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
 		</img>-->
 		<input class = "checkBox" type = "checkbox" checked = "checked">
 	</input>
 </div>
-<div class = "inner-content">
-	Twitter.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	Reddit.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	Youtube.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	9gag.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
+	{{/each}}
 </div>
 </div>
 
@@ -119,7 +93,7 @@
 	</div>
 	<div  class = "button";>
 	<a href = "/taskScreen/{{number}}" class = "button fontChange">
-		Return to Task</a>
+		Start Task</a>
 	</div>
 
 </div>

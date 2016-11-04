@@ -12,7 +12,7 @@
 	<h1>
 		<div id = "appHeader">
 
-			<a href = "./homepage.html" >
+			<a href = "/pages/homepage.html" >
 				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
 
 			</img>
@@ -67,42 +67,18 @@
 	</button>
 </div>
 
+
 <div id = "blockDropdown" class = "dropdown-content">
+	{{#each websites}}
 	<div class = "inner-content" id = "websiteOne">
-		Facebook.com
+		{{title}}
 			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
 		</img>-->
 		<input class = "checkBox" type = "checkbox" checked = "checked">
 	</input>
 </div>
-<div class = "inner-content">
-	Twitter.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	Reddit.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	Youtube.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
-<div class = "inner-content">
-	9gag.com
-			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
-		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
-	</input>
-</div>
+{{/each}}
+
 </div>
 </div>
 
@@ -114,7 +90,7 @@
 <div class = "button-holder">
 
 	<div  class = "button";>
-	<a href = "./homepage.html" class = "button fontChange">
+	<a href = "/pages/homepage.html" class = "button fontChange">
 		Cancel</a>
 	</div>
 	<div  class = "button";>

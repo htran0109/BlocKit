@@ -31,6 +31,24 @@
         "minutes" : 40,
         "notes" : "Prepare for career fair"
     }
+  ],
+
+  "websites": [
+    {
+        "title": "www.facebook.com"
+    },
+    {
+        "title": "www.twitter.com"
+    },
+    {
+        "title": "www.reddit.com"
+    },
+    {
+        "title": "www.youtube.com"
+    },
+    {
+        "title": "www.9gag.com"
+    }
   ]
 
 }

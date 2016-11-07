@@ -29,23 +29,23 @@
 			TASK NAME
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange"></textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "taskName"></textarea>
 	</div>
 	<div class="fontChange">
 		<p class = "title">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange"></textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "dueDate"></textarea>
 	</div>
 	<div class="fontChange">
 		<p class = "title">
 			TASK DURATION
 		</p>
 
-		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange"></textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange" id = "hours"></textarea>
 		hours:
-		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange"></textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange" id = "minutes"></textarea>
 		minutes
 	</div>
 	<div class="fontChange">
@@ -53,7 +53,7 @@
 			NOTES
 		</p>
 
-		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange"></textarea>
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange" id = "notes"></textarea>
 	</div>
 	<div class="fontChange">
 		<p class = "title">
@@ -89,15 +89,19 @@
 
 <div class = "button-holder">
 
-	<div  class = "button";>
+	<div  class = "button">
 	<a href = "/homepage" class = "button fontChange">
 		Cancel</a>
 	</div>
-	<div  class = "button";>
+	<div  class = "button" id = "create">
 	<a href = "/runPage" class = "button fontChange">
 		Create!</a>
 	</div>
 
+</div>
+
+<div id = "number">
+	{{tasks.length}}
 </div>
 
 	<script src="https://code.jquery.com/jquery.js">

@@ -85,5 +85,11 @@ exports.webAdd = function(req, res) {
 	res.json(data);
 }
 
+exports.taskAdd = function(req, res) {
+	console.log(req.body);
+	data['tasks'].push(req.body);
+	console.log(data);
+}
+
 
 

@@ -43,6 +43,7 @@ app.get('/settings', index.settings);
 app.get('/homepage', index.homepage);
 app.get('/help', index.help);
 app.post('/webAdd', index.webAdd);
+app.post('/taskAdd', index.taskAdd);
 
 
 

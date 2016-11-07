@@ -26,7 +26,8 @@ function initialize() {
 		var hours = $('#hours').val();
 		var minutes = $('#minutes').val();
 		var notes = $('#notes').val();
-		var number = $('#number').val();
+		var number = document.getElementById("number").innerHTML;
+		console.log(number);
 		number = parseInt(number);
 		console.log(taskName + "\n" + dueDate + "\n" + hours + "\n" + minutes + "\n" + notes + "\n" + number);
 		data = {"title": taskName, "id": "id"+number, "number":number, 

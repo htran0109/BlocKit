@@ -8,13 +8,6 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var runPage = require('./routes/runPage');
-var taskScreen = require('./routes/taskScreen');
-var editScreen = require('./routes/editScreen');
-var history = require('./routes/historyPage');
-var reviewScreen = require('./routes/reviewScreen');
-var createScreen = require('./routes/createTask');
-var settings = require('./routes/settings')
 // Create the server instance
 var app = express();
 
@@ -37,16 +30,18 @@ app.use(express.static(path.join(__dirname, 'static')));
 // whenever they are requested at '/'
 // e.g., http://localhost:3000/index.html
 // maps to /static/index.html on this machine
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/'));
 
 app.get('/', index.view);
-app.get('/runPage', runPage.view);
-app.get('/taskScreen/:taskNumber', taskScreen.view);
-app.get('/editScreen/:taskNumber', editScreen.view);
-app.get('/history', history.view);
-app.get('/review/:taskNumber', reviewScreen.view);
-app.get('/createTask', createScreen.view);
-app.get('/settings', settings.view)
+app.get('/runPage', index.runTask);
+app.get('/taskScreen/:taskNumber', index.taskScreen);
+app.get('/editScreen/:taskNumber', index.editScreen);
+app.get('/history', index.historyScreen);
+app.get('/review/:taskNumber', index.taskReview);
+app.get('/createTask', index.createTask);
+app.get('/settings', index.settings);
+app.get('/homepage', index.homepage);
+app.get('/help', index.help);
 
 
 // Start the server

@@ -77,5 +77,13 @@ exports.help = function(req, res) {
 	res.render('help');
 }
 
+exports.webAdd = function(req, res) {
+
+	console.log(req.body);
+	data['websites'].push(req.body);
+	console.log(data);
+	res.json(data);
+}
+
 
 

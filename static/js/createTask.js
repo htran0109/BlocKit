@@ -1,5 +1,5 @@
 
-var data ={"websites": []}
+var data = {};
 $(document).ready(function() {
 	initialize();
 })
@@ -15,7 +15,8 @@ function initialize() {
 		var webString = $('#websiteText').val();
 		console.log(webString);
 		console.log(data);
-		data['websites'].push({"title": webString});
+		data = {"title": webString};
+		$.post('webAdd/', data);
 		$('#websiteText').val("https://");
 	});
 

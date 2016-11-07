@@ -42,6 +42,8 @@ app.get('/createTask', index.createTask);
 app.get('/settings', index.settings);
 app.get('/homepage', index.homepage);
 app.get('/help', index.help);
+app.post('/webAdd', index.webAdd);
+
 
 
 // Start the server

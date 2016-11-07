@@ -1,4 +1,5 @@
-/*For dropdown, when clicked, show websites blocked*/
+
+var data ={"websites": []}
 $(document).ready(function() {
 	initialize();
 })
@@ -11,10 +12,11 @@ function initialize() {
 
 
 	$("#webAdd").click(function() {
-	var webString = $('#websiteText').val();
-	console.log(webString);
-	data['websites'].push({"title": "test"});
-	$('#websiteText').val("https://");
+		var webString = $('#websiteText').val();
+		console.log(webString);
+		console.log(data);
+		data['websites'].push({"title": webString});
+		$('#websiteText').val("https://");
 	});
 
 }

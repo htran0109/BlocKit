@@ -1,6 +1,5 @@
 
 var data = require('../static/json_data/data.json');
-var olddata = require('../static/json_data/oldTasks.json');
 
 exports.view = function(req, res){
 	console.log(data);

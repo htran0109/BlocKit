@@ -26,15 +26,15 @@
 	</ul>
 	
 	{{#each tasks}}
-	<div class = "button" id = "{{id}}">
-		<a class = "button fontChange" id = "{{id}}Text">
+	<div class = "button" id = "id{{@index}}">
+		<a class = "button fontChange" id = "id{{@index}}Text">
 			{{title}}, Due: {{due_date}}, Will Take <br>{{hours}} Hours, {{minutes}} minutes</a>
 			<br>
 			<div class = "extra-holder">
 
 				<div  class = "extra">
 					<div class = "dropdown">
-						<button onclick = "showDetails({{dropDown}})"
+						<button onclick = "showDetails(dropDown{{@index}})"
 						class = "dropbtn fontChange">Details
 						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
 					</img>
@@ -44,19 +44,20 @@
 		</div>
 		
 		<div class="extra">
-			<a href="/editScreen/{{number}}" class = "button fontChange">
+			<a href="/editScreen/{{@index}}" class = "button fontChange">
 			edit
 			</a>
 		</div>
 		
 		<div class = "extra">
-			<a href = "/taskScreen/{{number}}" class = "button fontChange">
+			<a href = "/taskScreen/{{@index}}" class = "button fontChange">
 				Start
 			</a>
 		</div>
 
+
 	</div>
-	<div id = "{{dropDown}}" class = "dropdown-content fontChange">
+	<div id = "dropDown{{@index}}" class = "dropdown-content fontChange">
 		<div class = "inner-content fontChange">
 			{{notes}}
 		</div>

@@ -29,23 +29,23 @@
 			TASK NAME
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange">{{title}}</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "taskName">{{title}}</textarea>
 	</div>
 	<div>
 		<p class = "title fontChange">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange">{{due_date}}</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "dueDate">{{due_date}}</textarea>
 	</div>
 	<div>
 		<p class = "title fontChange">
 			TASK DURATION
 		</p>
 
-		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange">{{hours}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange" id = "hours">{{hours}}</textarea>
 		hours:
-		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange">{{minutes}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange" id = "minutes">{{minutes}}</textarea>
 		minutes
 	</div>
 	<div>
@@ -53,7 +53,7 @@
 			NOTES
 		</p>
 
-		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange">{{notes}}</textarea>
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange" id = "notes">{{notes}}</textarea>
 	</div>
 	<div>
 		<p class = "title fontChange">
@@ -96,6 +96,10 @@
 		Start Task</a>
 	</div>
 
+</div>
+
+<div id = "number">
+{{number}}
 </div>
 
 	<script src="https://code.jquery.com/jquery.js">

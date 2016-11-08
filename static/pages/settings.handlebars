@@ -22,7 +22,7 @@
 				DEFAULT BLOCKED WEBSITES
 			</p>
 			<div class = "dropdown fontChange">
-				<button onclick = "showBlocked()" class = "dropbtn"> 5 Blocked <img src = "../images/dropDown.png" style = "width:20;height:20px;"></button>
+				<button onclick = "showBlocked()" class = "dropbtn"> {{websites.length}} Blocked <img src = "../images/dropDown.png" style = "width:20;height:20px;"></button>
 			</div>
 
 			<div id = "blockDropdown" class = "dropdown-content" "fontChange">
@@ -40,7 +40,7 @@
 
 		<div class = "webBox fontChange">
 			<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100">https://</textarea>
-			<button id = "webAdd fontChange"><strong>ADD</strong></button>
+			<button id = "webAdd" class = "fontchange"><strong>ADD</strong></button>
 		</div>
 
 		<script src="https://code.jquery.com/jquery.js"></script>

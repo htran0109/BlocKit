@@ -13,11 +13,13 @@ exports.historyScreen = function(req, res){
 
 exports.editScreen = function(req, res){
 	//grab the taskNumber to be shown
-		console.log(req.params.taskNumber);
+	console.log(req.params.taskNumber);
 	var taskNumber = parseInt(req.params.taskNumber,10);
 	console.log(taskNumber);
 	console.log(data);
 	console.log(data.tasks[taskNumber]);
+	data.tasks[taskNumber]['number'] = taskNumber;
+	console.log(data.tasks[taskNumber].number);
 	var newData = data.tasks[taskNumber];
 	newData.websites = data.websites;
 	res.render('editScreen', newData);
@@ -37,6 +39,8 @@ exports.taskReview = function(req, res){
 	console.log(taskNumber);
 	console.log(olddata);
 	console.log(olddata.tasks[taskNumber]);
+	olddata.tasks[taskNumber].number = olddata.tasks.indexof(olddata.tasks[taskNumber]);
+	console.log(olddata.tasks[taskNumber].number);
 	var newData = olddata.tasks[taskNumber];
 	newData.websites = data.websites;
 	res.render('taskReview', newData);
@@ -89,6 +93,13 @@ exports.taskAdd = function(req, res) {
 	console.log(req.body);
 	data['tasks'].push(req.body);
 	console.log(data);
+}
+
+exports.taskEdit = function(req, res) {
+	console.log(req.body);
+	console.log(req.body['number']);
+	data['tasks'][req.body['number']] = req.body;
+
 }
 
 

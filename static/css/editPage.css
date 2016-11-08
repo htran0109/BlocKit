@@ -134,3 +134,7 @@ a.button{
 .checkBox {
   display:inline;
 }
+
+#number {
+  display:none;
+}

@@ -45,7 +45,7 @@
 		
 		<div class="extra">
 			<a href="/editScreen/{{@index}}" class = "button fontChange">
-			edit
+			Edit
 			</a>
 		</div>
 		
@@ -54,7 +54,14 @@
 				Start
 			</a>
 		</div>
-
+		<div class = "extra" id = "delete" onClick = "taskDelete({{@index}})">
+				<a href = "/runPage" class = "button fontChange">
+				Delete
+			</a>
+		</div>
+		<div id = "number">
+			{{@index}}
+		</div>
 
 	</div>
 	<div id = "dropDown{{@index}}" class = "dropdown-content fontChange">

@@ -102,5 +102,12 @@ exports.taskEdit = function(req, res) {
 
 }
 
+exports.taskDelete = function(req, res) {
+	console.log(req.body);
+	console.log(req.body['number']);
+	data['tasks'].splice(req.body['number'], 1);// remove the element
+	
+}
+
 
 

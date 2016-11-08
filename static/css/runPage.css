@@ -114,3 +114,7 @@ div.extra-holder{
 .show {
   display:block;
 }
+
+#number {
+  display:none;
+}

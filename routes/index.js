@@ -67,6 +67,8 @@ exports.taskScreen = function(req, res){
 	console.log(data.tasks[taskNumber]);
 	var newData = data.tasks[taskNumber];
 	newData.websites = data.websites;
+	data.tasks[taskNumber]['number'] = taskNumber;
+	console.log(data.tasks[taskNumber].number);
 	res.render('taskScreen', newData);
 	
 	

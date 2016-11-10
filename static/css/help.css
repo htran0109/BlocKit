@@ -6,12 +6,21 @@
 h1{
 	font-family:Montserrat;
 	padding-bottom: 10px;
+	margin: 10px 0px 0px 0px;
+
 }
+
 
 body{
 	padding: 10px;
 	font-size:18px;
 	font-family: Montserrat;
+	margin: 0px 150px 150px 150px;
+}
+
+img{
+	margin: 10px 0px 0px 0px;
+	
 }
 
 div.button{
@@ -29,6 +38,9 @@ a.button{
      text-decoration: none;
 }
 
+#tagline{
+	margin: -10px 0px 0px 0px;
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {

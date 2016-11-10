@@ -10,62 +10,63 @@
 		BlocKIT
 	</title>
 	<h1>
-		<div>
+		<div id = "appHeader">
 
 			<a href = "/homepage" >
 				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
 
 			</img>
 		</a>
-		Review Task
+		Create Task
 
 
 	</div>
 </h1>
 </head>
 <body>
-	<div>
+	<div class="fontChange">
 		<p class = "title">
 			TASK NAME
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40">{{title}}</textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "taskName"></textarea>
 	</div>
-	<div>
+	<div class="fontChange">
 		<p class = "title">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "37" class = "input" maxlength = "40"></textarea>
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "dueDate"></textarea>
 	</div>
-	<div>
+	<div class="fontChange">
 		<p class = "title">
 			TASK DURATION
 		</p>
 
-		<textarea rows="1" cols = "12" class = "input" maxlength = "3">{{hours}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange" id = "hours"></textarea>
 		hours:
-		<textarea rows="1" cols = "12" class = "input" maxlength = "2">{{minutes}}</textarea>
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange" id = "minutes"></textarea>
 		minutes
 	</div>
-	<div>
+	<div class="fontChange">
 		<p class = "title">
 			NOTES
 		</p>
 
-		<textarea rows="7" cols = "37" class = "input" maxlength = "280">{{notes}}</textarea>
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange" id = "notes"></textarea>
 	</div>
-	<div>
+	<div class="fontChange">
 		<p class = "title">
 			BLOCKED WEBSITES
 		</p>
-		<div class = "dropdown">
+		<div class = "dropdown fontChange" id = "webDropDown">
 			<button onclick = "showBlocked()"
-			class = "dropbtn">5 Blocked
+			class = "dropbtn">{{websites.length}} Blocked
 			<img src = "../images/dropDown.png" style = "width:20;height:20px;">
 		</img>
 	</button>
 </div>
+
 
 <div id = "blockDropdown" class = "dropdown-content">
 	{{#each websites}}
@@ -76,31 +77,37 @@
 		<input class = "checkBox" type = "checkbox" checked = "checked">
 	</input>
 </div>
-	{{/each}}
+{{/each}}
+
 </div>
 </div>
 
 <div class = "webBox">
-	<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100">https://</textarea>
+	<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100" class="fontChange">https://</textarea>
 	<button id = "webAdd"><strong>ADD</strong></button>
 </div>
 
 <div class = "button-holder">
 
-	<div  class = "button";>
-	<a href = "/homepage" class = "button">
-		Back to Menu</a>
+	<div  class = "button">
+	<a href = "/homepage" class = "button fontChange">
+		Cancel</a>
 	</div>
-	<div  class = "button";>
-	<a href = "/homepage" class = "button">
-		Recreate Task</a>
+	<div  class = "button" id = "create">
+	<a href = "/runPage" class = "button fontChange">
+		Create!</a>
 	</div>
 
+</div>
+
+<div id = "number">
+	{{tasks.length}}
 </div>
 
 	<script src="https://code.jquery.com/jquery.js">
 	</script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/createTask.js"></script>
+	<script type = "text/javascript" src="../js/createTask.js"></script>
+	<script type = "text/javascript" src="routes/index.js"></script>
 </body>
 </html>

@@ -1,7 +1,10 @@
-.jumbotron{
-   font-size:46px; 
-   text-align: center;
-   position: relative; 
+#appHeader{
+	background-color:ececec;
+	font-family: Montserrat;
+}
+
+.fontChange{
+	font-family: Montserrat;
 }
 
 ul.topnav {
@@ -52,7 +55,7 @@ a.button{
 
 div.extra{
   display:table-cell;
-  width:50%;
+  width:33%;
   padding:2px;
   font-size:26px;
   margin:10px;
@@ -110,4 +113,24 @@ div.extra-holder{
 
 .show {
   display:block;
+}
+
+#number {
+  display:none;
+}
+
+#fixedHeader{
+  margin-left : 10px;
+  position:fixed;
+  background-color: red;
+}
+
+#header-holder{
+  display:table;
+  width: 100%;
+}
+
+#tasksButton {
+  display:table-cell;
+  width: 40%;
 }

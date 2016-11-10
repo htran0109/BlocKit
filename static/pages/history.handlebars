@@ -1,3 +1,4 @@
+
 <html>
 <head>
 	<h1>
@@ -12,7 +13,8 @@
 </head>
 <body>
 	<div>
-		<h1 class = "jumbotron">Tasks Completed</h1>
+		<h1 class="fontChange" id="appHeader">
+						<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>Tasks Completed</h1>
 	</div>
 	
 	<ul class="topnav" id="myTopnav">
@@ -22,7 +24,7 @@
 
 	</ul>
 	
-	{{#each tasks}}
+	{{#each oldTasks}}
 	<div class = "button" id = "{{id}}">
 		<a class = "button" id = "{{id}}Text">
 			{{title}}</a>
@@ -85,7 +87,7 @@
 	</div>
 	</div>-->
 	<div class = "button">
-		<a class ="button" href = "/pages/homepage.html"> Back To Home </a>
+		<a class ="button" href = "/homepage"> Back To Home </a>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>

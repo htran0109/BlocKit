@@ -5,6 +5,11 @@
 
 }
 
+#appHeader{
+	background-color:ececec;
+	font-family: Montserrat;
+}
+
 #header{
   text-align: center;
   text-decoration: none;
@@ -19,7 +24,7 @@
 
 .title {
   position: relative;
-  font-family: Verdana;
+  font-family: Montserrat;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 2px;
@@ -130,4 +135,12 @@ a.button{
 
 .checkBox {
   display:inline;
+}
+
+.fontChange{
+	font-family: Montserrat;
+}
+
+#number{
+  display:none;
 }

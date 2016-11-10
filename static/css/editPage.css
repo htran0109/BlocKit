@@ -1,9 +1,8 @@
-.jumbotron{
-   font-size:30px; 
-   text-align: center;
-   position: relative; 
-
+#appHeader{
+	background-color:ececec;
+	font-family: Montserrat;
 }
+
 
 #header{
   text-align: center;
@@ -15,6 +14,10 @@
   text-align: left;
   text-decoration: none;
 
+}
+
+.fontChange{
+	font-family: Montserrat;
 }
 
 .title {
@@ -130,4 +133,8 @@ a.button{
 
 .checkBox {
   display:inline;
+}
+
+#number {
+  display:none;
 }

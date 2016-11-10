@@ -99,6 +99,10 @@ exports.help = function(req, res) {
 	res.render('help');
 }
 
+exports.register = function(req, res) {
+	res.render('register');
+}
+
 exports.webAdd = function(req, res) {
 
 	console.log(req.body);

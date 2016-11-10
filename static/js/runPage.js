@@ -24,11 +24,6 @@ function initialize() {
 		console.log("detailDropdown" + event.target.id);
 		document.getElementById("detailDropdown" + event.target.id).classList.toggle("show");
 	});*/
-
-	$("#tasksButton").click(function {
-		$.get('/runPage');
-
-	});
 }
 
 

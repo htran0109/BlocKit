@@ -33,9 +33,6 @@ ul.topnav li a:hover, a:active
 	color: #ffffff;
 }
 
-
-
-
 div.button{
      padding:5px;
      font-size:26px;
@@ -120,9 +117,14 @@ div.extra-holder{
 }
 
 #fixedHeader{
-  margin-left : 10px;
+  text-align: center;
   position:fixed;
-  background-color: red;
+  background-color: #b91919;
+  padding: 10px;
+}
+
+.buffer{
+  padding:20px;
 }
 
 #header-holder{
@@ -133,4 +135,5 @@ div.extra-holder{
 #tasksButton {
   display:table-cell;
   width: 40%;
+  text-decoration: none;
 }

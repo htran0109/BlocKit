@@ -37,7 +37,7 @@ div.button{
      padding:5px;
      font-size:26px;
      margin:3px;
-     text-align: left;
+     text-align: center;
      position:relative;
      border-style:solid;
      border-width: 2px;
@@ -106,7 +106,7 @@ div.extra-holder{
 
 .inner-content:hover {
   background-color: #f1f1f1;
-};
+}
 
 .show {
   display:block;
@@ -119,8 +119,7 @@ div.extra-holder{
 #fixedHeader{
   text-align: center;
   position:fixed;
-  background-color: #b91919;
-  padding: 10px;
+
 }
 
 .buffer{
@@ -134,6 +133,51 @@ div.extra-holder{
 
 #tasksButton {
   display:table-cell;
-  width: 40%;
+  width: 50%;
   text-decoration: none;
+  color: white;
+  background-color: #b91919;
+  padding:5px;
+  height:20px;
+}
+
+#addTasksButton {
+  display:table-cell;
+  width: 10%;
+  text-decoration: none;
+  background-color: #b91919;
+  padding:5px;
+  padding-right:10px;
+}
+
+#blockButton {
+  display:table-cell;
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  background-color: #b9b9b9;
+  padding: 5px;
+}
+
+#helpButton {
+  display:table-cell;
+  width: 10%;
+  text-decoration: none;
+  color: white;
+  background-color: #b9b9b9;
+  padding: 5px;
+}
+
+#exitButton {
+  display:table-cell;
+  width: 10%;
+  text-decoration: none;
+  color: white;
+  background-color: #b9b9b9;
+  padding: 5px;
+}
+
+
+#blockText {
+  color:white;
 }

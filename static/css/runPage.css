@@ -150,6 +150,7 @@ div.extra-holder{
   background-color: #b91919;
   padding:5px;
   padding-right:10px;
+  height:20px;
 }
 
 #blockButton {
@@ -159,6 +160,7 @@ div.extra-holder{
   color: white;
   background-color: #b9b9b9;
   padding: 5px;
+  height:20px;
 }
 
 #helpButton {
@@ -168,6 +170,7 @@ div.extra-holder{
   color: white;
   background-color: #b9b9b9;
   padding: 5px;
+  height:20px;
 }
 
 #exitButton {
@@ -177,6 +180,7 @@ div.extra-holder{
   color: white;
   background-color: #b9b9b9;
   padding: 5px;
+  height:20px;
 }
 
 

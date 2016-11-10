@@ -118,3 +118,19 @@ div.extra-holder{
 #number {
   display:none;
 }
+
+#fixedHeader{
+  margin-left : 10px;
+  position:fixed;
+  background-color: red;
+}
+
+#header-holder{
+  display:table;
+  width: 100%;
+}
+
+#tasksButton {
+  display:table-cell;
+  width: 40%;
+}

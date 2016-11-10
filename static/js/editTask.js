@@ -12,12 +12,36 @@ function initialize() {
 
 
 	$("#webAdd").click(function() {
+	$("#webAdd").click(function() {
 		var webString = $('#websiteText').val();
+		var html = $('#blockDropdown').html();
+		console.log(html);
 		console.log(webString);
 		console.log(data);
 		data = {"title": webString};
-		$.post('/webAdd', data);
+		$.ajax({
+			type: 'POST',
+			url: '/webAdd',
+			data: data,
+			success: function(reply) {
+				//html = html.substring(0, html.length - 6);
+				html = html + 	'<div class = "inner-content" id = "websiteOne">'+ reply.websites[reply['websites'].length-1]['title'];
+				html = html + '<input class = "checkBox" type = "checkbox" checked = "checked">';
+				html = html + '</input>';
+				html = html + '</div>';
+				$('#blockDropdown').html(html); 
+				$('#webDropDown').html('<button onclick = "showBlocked()"' +
+			'class = "dropbtn">' + reply['websites'].length +' Blocked' +
+			'<img src = "../images/dropDown.png" style = "width:20;height:20px;">' +
+		'</img>');
+				
+		//$.post('/webAdd', data);
+			}
+		});
+		
 		$('#websiteText').val("https://");
+
+	});
 	});
 	$(".button").click(function() {
 				var taskName = $('#taskName').val();

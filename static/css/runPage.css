@@ -119,6 +119,8 @@ div.extra-holder{
 #fixedHeader{
   text-align: center;
   position:fixed;
+  z-index:10;
+  background:inherit;
 
 }
 

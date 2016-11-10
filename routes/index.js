@@ -27,6 +27,22 @@ exports.editScreen = function(req, res){
 	
 };
 
+exports.editScreen2 = function(req, res){
+	//grab the taskNumber to be shown
+	console.log(req.params.taskNumber);
+	var taskNumber = parseInt(req.params.taskNumber,10);
+	console.log(taskNumber);
+	console.log(data);
+	console.log(data.tasks[taskNumber]);
+	data.tasks[taskNumber]['number'] = taskNumber;
+	console.log(data.tasks[taskNumber].number);
+	var newData = data.tasks[taskNumber];
+	newData.websites = data.websites;
+	res.render('editScreen2', newData);
+	
+	
+};
+
 exports.createTask = function(req, res){
 	console.log(data);
 	res.render('createTask', data);

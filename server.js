@@ -36,6 +36,7 @@ app.get('/', index.view);
 app.get('/runPage', index.runTask);
 app.get('/taskScreen/:taskNumber', index.taskScreen);
 app.get('/editScreen/:taskNumber', index.editScreen);
+app.get('/editScreen2/:taskNumber', index.editScreen2);
 app.get('/history', index.historyScreen);
 app.get('/review/:taskNumber', index.taskReview);
 app.get('/createTask', index.createTask);

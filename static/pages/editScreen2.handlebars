@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css/bootstrap.min.css" rel = "stylesheet">
+	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/editPage.css" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "../css/editPage.css"></link>
+	<title id = "title">
+		BlocKIT
+	</title>
+	<h1>
+		<div id="appHeader">
+
+			<a href = "/runPage" >
+				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
+
+			</img>
+		</a>
+		Edit A Task
+
+
+	</div>
+</h1>
+</head>
+<body>
+	<div>
+		<p class = "title fontChange">
+			TASK NAME
+		</p>
+
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "taskName">{{title}}</textarea>
+	</div>
+	<div>
+		<p class = "title fontChange">
+			DUE DATE
+		</p>
+
+		<textarea rows="1" cols = "37" class = "input" maxlength = "40" class="fontChange" id = "dueDate">{{due_date}}</textarea>
+	</div>
+	<div>
+		<p class = "title fontChange">
+			TASK DURATION
+		</p>
+
+		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange" id = "hours">{{hours}}</textarea>
+		hours:
+		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange" id = "minutes">{{minutes}}</textarea>
+		minutes
+	</div>
+	<div>
+		<p class = "title fontChange">
+			NOTES
+		</p>
+
+		<textarea rows="7" cols = "37" class = "input" maxlength = "280" class="fontChange" id = "notes">{{notes}}</textarea>
+	</div>
+	<div>
+		<p class = "title fontChange">
+			BLOCKED WEBSITES
+		</p>
+		<div class = "dropdown" id = "webDropDown">
+			<button onclick = "showBlocked()"
+			class = "dropbtn fontChange">5 Blocked
+			<img src = "/images/dropDown.png" style = "width:20;height:20px;">
+		</img>
+	</button>
+</div>
+
+<div id = "blockDropdown" class = "dropdown-content fontChange">
+	{{#each websites}}
+	<div class = "inner-content" id = "websiteOne">
+		{{title}}
+			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
+		</img>-->
+		<input class = "checkBox" type = "checkbox" checked = "checked">
+	</input>
+</div>
+	{{/each}}
+</div>
+</div>
+
+<div class = "webBox">
+	<textarea id = "websiteText" rows="1" cols = "27" maxlength = "100" class="fontChange">https://</textarea>
+	<button id = "webAdd" class="fontChange"><strong>ADD</strong></button>
+</div>
+
+<div class = "button-holder">
+
+	<div  class = "button";>
+	<a href = "/runPage" class = "button fontChange">
+		Exit Task</a>
+	</div>
+	<div  class = "button";>
+	<a href = "/taskScreen/{{number}}" class = "button fontChange">
+		Start Task</a>
+	</div>
+
+</div>
+
+<div id = "number">
+{{number}}
+</div>
+
+	<script src="https://code.jquery.com/jquery.js">
+	</script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/editTask.js"></script>
+</body>
+</html>

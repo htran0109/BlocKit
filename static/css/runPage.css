@@ -211,6 +211,7 @@ div.extra-holder{
 
 
 #second-header-holder{
+  font-family: Montserrat;
   display:table;
   width: 100%;
   height:30px;
@@ -225,6 +226,7 @@ div.extra-holder{
 }
 
 #todoText {
+  font-family: Montserrat;
   color:#b91919;
   text-align:center;
   font-size:16px;
@@ -239,6 +241,7 @@ div.extra-holder{
 }
 
 #completedText {
+  font-family: Montserrat;
   color:black;
   text-align:center;
   font-size:16px;
@@ -258,6 +261,7 @@ div.extra-holder{
 }
 
 #addTaskText {
+  font-family: Montserrat;
   font-size:18px;
   color:#b91919;
   text-align:center;

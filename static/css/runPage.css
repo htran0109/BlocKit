@@ -160,6 +160,8 @@ div.extra-holder{
   background-color: #b91919;
   padding:7px 5px 7px 5px;
   height:30px;
+  border-bottom:solid;
+  border-bottom-color: #da1e2b;
 }
 
 /*#addTasksButton {

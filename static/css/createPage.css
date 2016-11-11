@@ -7,7 +7,7 @@
 
 #appHeader{
 	background-color:ececec;
-	font-family: Montserrat;
+	font-family: calibri;
 }
 
 #header{
@@ -24,7 +24,7 @@
 
 .title {
   position: relative;
-  font-family: Montserrat;
+  font-family: calibri;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 2px;
@@ -39,15 +39,14 @@
 }
 
 .dropbtn {
-  background-color: #ffffff;
+  background-color: #E8E3E3;;
   color: black;
   padding: 3px;
   width: 300px;
   font-size: 20px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   border-color:black;
-  margin-right: 40px;
   text-align: left;
 }
 
@@ -125,7 +124,7 @@ a.button{
   border-width:1px;
   padding-top:5px;
   padding-bottom:5px;
-  font-family: Verdana;
+  font-family: Calibri;
   font-size:14px;
 }
 
@@ -138,7 +137,7 @@ a.button{
 }
 
 .fontChange{
-	font-family: Montserrat;
+	font-family: calibri;
 }
 
 #number{
@@ -287,4 +286,22 @@ a.button{
   color:#b91919;
   text-align:center;
   text-decoration: none;
+}
+
+#canceling{
+	color: white;
+	background-color: 595959;
+}
+
+#cancelingText{
+	color: white;
+}
+
+#create{
+	color: white;
+	background-color: 17bebb;
+}
+
+#createText{
+	color: white;
 }

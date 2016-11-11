@@ -75,6 +75,7 @@
 	
 
 <body>
+<center>
 	<div class="fontChange">
 		<p class = "title">
 			TASK NAME
@@ -95,9 +96,9 @@
 		</p>
 
 		<textarea rows="1" cols = "12" class = "input" maxlength = "3" class="fontChange" id = "hours"></textarea>
-		hours:
+		HR
 		<textarea rows="1" cols = "12" class = "input" maxlength = "2" class="fontChange" id = "minutes"></textarea>
-		minutes
+		MIN
 	</div>
 	<div class="fontChange">
 		<p class = "title">
@@ -140,12 +141,12 @@
 
 <div class = "button-holder">
 
-	<div  class = "button">
-	<a href = "/runPage" class = "button fontChange">
+	<div  class = "button" id="canceling">
+	<a href = "/runPage" class = "button fontChange" id ="cancelingText">
 		Cancel</a>
 	</div>
 	<div  class = "button" id = "create">
-	<a href = "/runPage" class = "button fontChange">
+	<a href = "/runPage" class = "button fontChange" id = "createText">
 		Create!</a>
 	</div>
 
@@ -154,6 +155,7 @@
 <div id = "number">
 	{{tasks.length}}
 </div>
+</center>
 
 	<script src="https://code.jquery.com/jquery.js">
 	</script>

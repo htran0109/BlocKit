@@ -8,6 +8,11 @@ exports.view = function(req, res){
 
 exports.historyScreen = function(req, res){
 	console.log(data);
+	for(var i = 0; i < data['oldTasks'].length; i++) {
+		data.oldTasks[i]['number'] = i;
+		data.oldTasks[i]['id'] = "id"+i;
+		data.oldTasks[i]['dropDown'] = "detailDropdown" + i;
+	}
 	res.render('history', data);
 };
 
@@ -131,5 +136,17 @@ exports.taskDelete = function(req, res) {
 	
 }
 
+exports.oldTaskAdd = function(req, res) {
+	console.log(req.body);
+	data['oldTasks'].push(req.body);
+	console.log(data);
+}
+
+exports.oldTaskDelete = function(req, res) {
+	console.log(req.body);
+	console.log(req.body['number']);
+	data['oldTasks'].splice(req.body['number'], 1);// remove the element
+	
+}
 
 

@@ -48,6 +48,8 @@ app.post('/webAdd', index.webAdd);
 app.post('/taskAdd', index.taskAdd);
 app.post('/taskEdit', index.taskEdit);
 app.post('/taskDelete', index.taskDelete);
+app.post('/oldTaskAdd', index.oldTaskAdd);
+app.post('/oldTaskDelete', index.oldTaskDelete);
 
 
 

@@ -34,6 +34,22 @@ function initialize() {
 	$("#webAdd").click(function() {
 	$('#websiteText').val("https://");
 	});
+    $("#confirm").click(function() {
+        var taskName = $('#taskName').val();
+        var dueDate = $('#dueDate').val();
+        var hours = $('#hours').val();
+        var minutes = $('#minutes').val();
+        var notes = $('#notes').val();
+        var number = document.getElementById("number").innerHTML;
+        console.log(number);
+        number = parseInt(number);
+        console.log(taskName + "\n" + dueDate + "\n" + hours + "\n" + minutes + "\n" + notes + "\n" + number);
+        data = {"title": taskName, "id": "id"+number, "number":number, 
+        "dropDown": "detailDropdown"+number, "due_date":dueDate, "hours":hours, "minutes":minutes, "notes":notes}
+        $.post('/taskDelete', data);
+        $.post('/oldTaskAdd', data);
+        
+    });
 }
 
 

@@ -43,8 +43,8 @@ function initialize() {
 
 	});
 	});
-	$(".button").click(function() {
-				var taskName = $('#taskName').val();
+	$("#confirm").click(function() {
+		var taskName = $('#taskName').val();
 		var dueDate = $('#dueDate').val();
 		var hours = $('#hours').val();
 		var minutes = $('#minutes').val();

@@ -17,7 +17,7 @@
 			
 			<div class = "tasksButton">
 			<a href = "/runPage" id = "tasksText">
-				TASK
+				TASKS
 				
 			
 			</a>
@@ -98,7 +98,8 @@
 	{{#each oldTasks}}
 	<div class = "button" id = "{{id}}">
 		<a class = "button" id = "{{id}}Text">
-			{{title}}</a>
+			{{title}} <a href = "/history"><img class = "xbutton" src = "/images/xbutton.png" style = "width:20px;height;20px;" onClick = "oldTaskDelete({{@index}})" ><img></a>
+		</a>
 			<br>
 			<div class = "extra-holder">
 
@@ -163,6 +164,6 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script src = "../js/runPage.js"></script>
+	<script src = "../js/history.js"></script>
 </body>
 </html>

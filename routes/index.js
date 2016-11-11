@@ -146,7 +146,6 @@ exports.oldTaskDelete = function(req, res) {
 	console.log(req.body);
 	console.log(req.body['number']);
 	data['oldTasks'].splice(req.body['number'], 1);// remove the element
-	
 }
 
 

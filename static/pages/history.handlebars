@@ -1,8 +1,7 @@
 
 <html>
 <head>
-	<h1>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<title>BlocKIT</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +9,82 @@
 		<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="../css/taskHistory.css" rel="stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "../css/taskHistory.css"></link>
-	</h1>
 </head>
 <body>
-	<div>
+	<body>
+	<div id = "fixedHeader">
+		<div id = "header-holder">
+			
+			<div class = "tasksButton">
+			<a href = "/runPage" id = "tasksText">
+				Tasks
+				
+			
+			</a>
+			</div>
+			
+			
+			<div id = "blockButton">
+					<a href = "/settings">
+						<img src = "../images/websiteblock.png" style = "width:20px;height:15px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "helpButton">
+					<a href = "/help">
+						<img src = "../images/help.png" style = "width:20px;height:20px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "exitButton">
+					<a href = "/">
+						<img src = "../images/exit.png" style = "width:20px;height:20px;"></img>
+					</a>
+			</div>
+
+
+		</div>
+
+	</div> 
+
+
+	<!--<h1 class="fontChange" id="appHeader">
+		<div>
+			<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>
+			Run Task
+		</div>
+	</h1>-->
+	<div class = "buffer"> 
+		<!-- Used to create room for top bar-->
+	</div>
+	
+<div id = "second-header-holder">
+			
+			<div id = "todoButton">
+			<a href = "/runPage" id = "todoText">
+				To Do
+			</a>
+			</div>
+			<div id = "completedButton">
+			<a href = "/history" id = "completedText">
+				Completed
+			</a>
+			</div>
+			<div id = "secondHeaderBuffer">
+
+			</div>
+			<div id = "addTaskButton">
+				<a href = "/createTask" id = "addTaskText">
+				+Add Task
+			</a>
+			</div>
+
+
+
+</div>
+	<!--<div>
 		<h1 class="fontChange" id="appHeader">
 						<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>Tasks Completed</h1>
 	</div>
@@ -23,7 +94,7 @@
 	<li><a href="/runPage">To Do</a></li>
 	<li><a href="/history">Completed</a></li>
 
-	</ul>
+	</ul>-->
 	
 	{{#each oldTasks}}
 	<div class = "button" id = "{{id}}">
@@ -87,9 +158,9 @@
 
 	</div>
 	</div>-->
-	<div class = "button">
+	<!--<div class = "button">
 		<a class ="button" href = "/homepage"> Back To Home </a>
-	</div>
+	</div>-->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

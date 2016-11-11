@@ -252,6 +252,7 @@ div.extra-holder{
 #addTaskButton {
   width:30%;
   display:table-cell;
+  text-decoration: none;
 }
 
 #addTaskText {

@@ -52,7 +52,7 @@ a.button{
 
 div.extra{
   display:table-cell;
-  width:20%;
+  width:10%;
   padding:2px;
   font-size:20px;
   margin:10px;
@@ -64,7 +64,7 @@ div.extra{
 
 #details{
   display:table-cell;
-  width:40%;
+  width:80%;
   padding:2px;
   font-size:20px;
   margin:10px;

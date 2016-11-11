@@ -1,5 +1,5 @@
 /*For dropdown, when clicked, show websites blocked*/
-
+var data = {};
 $(document).ready(function() {
 	initialize();
 })

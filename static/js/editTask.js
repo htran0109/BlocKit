@@ -58,6 +58,12 @@ function initialize() {
 		$.post('/taskEdit', data);
 	});
 
+	$("#delete").click(function() {
+		var number = document.getElementById("number").innerHTML;
+		data = {'number': number}
+		$.post('/taskDelete', data)
+	});
+
 }
 
 

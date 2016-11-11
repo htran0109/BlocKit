@@ -146,7 +146,7 @@ div.extra-holder{
 
 #header-holder{
   display:table;
-  width: 100%;
+  width: 90%;
   height:30px;
   background-color: #b9b9b9;
 }
@@ -199,7 +199,7 @@ div.extra-holder{
 
 #exitButton {
   display:table-cell;
-  width: 15%;
+  width: 10%;
   text-decoration: none;
   color: white;
   background-color: #b9b9b9;
@@ -224,13 +224,14 @@ div.extra-holder{
 #todoButton {
   display:table-cell;
   border-right:solid;
-  width: 5px;
+  text-align:right;
+  width: 20%;
   margin:5px;
 }
 
 #todoText {
   color:#b91919;
-  text-align:center;
+  text-align:right;
   font-size:16px;
   text-decoration: none;
 }
@@ -238,7 +239,7 @@ div.extra-holder{
 
 #completedButton {
   display:table-cell;
-  width: 2px;
+  width: 15%;
   margin: 0px;
   padding-left:1px;
 }

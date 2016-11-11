@@ -10,7 +10,7 @@
 	<title id = "title">
 		BlocKIT
 	</title>
-	<h1>
+	<!--<h1>
 		<div id="appHeader">
 
 			<a href = "/taskScreen/{{number}}" >
@@ -21,10 +21,59 @@
 		Edit A Task
 
 
-	</div>
-</h1>
+	</div>-->
+
 </head>
 <body>
+	<div id = "fixedHeader">
+		<div id = "header-holder">
+			
+			<div class = "tasksButton">
+			<a href = "/runPage" id = "tasksText">
+				Tasks
+				
+			
+			</a>
+			</div>
+			
+			
+			<div id = "blockButton">
+					<a href = "/settings">
+						<img src = "../images/websiteblock.png" style = "width:20px;height:15px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "helpButton">
+					<a href = "/help">
+						<img src = "../images/help.png" style = "width:20px;height:20px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "exitButton">
+					<a href = "/">
+						<img src = "../images/exit.png" style = "width:20px;height:20px;"></img>
+					</a>
+			</div>
+
+
+		</div>
+
+	</div> 
+
+
+	<!--<h1 class="fontChange" id="appHeader">
+		<div>
+			<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>
+			Run Task
+		</div>
+	</h1>-->
+	<div class = "buffer"> 
+		<!-- Used to create room for top bar-->
+	</div>
+
+
 	<div>
 		<p class = "title fontChange">
 			TASK NAME
@@ -90,7 +139,7 @@
 
 	<div  class = "button";>
 	<a href = "/runPage" class = "button fontChange">
-		Exit Task</a>
+		Cancel</a>
 	</div>
 	<div  class = "button";>
 	<a href = "/taskScreen/{{number}}" class = "button fontChange">

@@ -14,18 +14,13 @@
 <body>
 	<div id = "fixedHeader">
 		<div id = "header-holder">
-			<a id = "tasksButton" href = "/runPage">
-			<div id = "tasksButton">
+			
+			<div class = "tasksButton">
+			<a href = "/runPage" id = "tasksText">
 				Tasks
 				
-			</div>
-			</a>
 			
-			<div id = "addTasksButton">
-				<a href = "/createTask">
-				
-					<img src = "../images/addicon.png" style = "width:20px;height:20px;"></img>
-				</a>
+			</a>
 			</div>
 			
 			
@@ -65,24 +60,48 @@
 		<!-- Used to create room for top bar-->
 	</div>
 	
-	<ul class="topnav fontChange" id="myTopnav">
+<div id = "second-header-holder">
+			
+			<div id = "todoButton">
+			<a href = "/runPage" id = "todoText">
+				To Do
+			</a>
+			</div>
+			<div id = "completedButton">
+			<a href = "/history" id = "completedText">
+				Completed
+			</a>
+			</div>
+			<div id = "secondHeaderBuffer">
+
+			</div>
+			<div id = "addTaskButton">
+				<a href = "/createTask" id = "addTaskText">
+				+Add Task
+			</a>
+			</div>
+
+
+
+</div>
+	<!--<ul class="topnav fontChange" id="myTopnav">
 
 	<li><a href="/runPage">To Do</a></li>
 	<li><a href="/history">Completed</a></li>
 
-	</ul>
+	</ul>-->
 	
 	{{#each tasks}}
 	<div class = "button" id = "id{{@index}}">
 		<a class = "button fontChange" id = "id{{@index}}Text">
-			{{title}}, Due: {{due_date}}, Will Take <br>{{hours}} Hours, {{minutes}} minutes</a>
+			{{title}}, Due: {{due_date}}, Duration: <br>{{hours}} Hours, {{minutes}} minutes</a>
 			<br>
 			<div class = "extra-holder">
 
-				<div  class = "extra">
+				<div  class = "extra"id = "details">
 					<div class = "dropdown">
 						<button onclick = "showDetails(dropDown{{@index}})"
-						class = "dropbtn fontChange">Details
+						class = "dropbtn fontChange" >Details
 						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
 					</img>
 				</button>
@@ -145,9 +164,9 @@
 		</div>
 	</div>
 	</div>-->
-	<div class = "button">
+	<!--<div class = "button">
 		<a class ="button fontChange" href = "/homepage"> Back To Home </a>
-	</div>
+	</div>-->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

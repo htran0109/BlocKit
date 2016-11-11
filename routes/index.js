@@ -53,11 +53,11 @@ exports.taskReview = function(req, res){
 	console.log(req.params.taskNumber);
 	var taskNumber = parseInt(req.params.taskNumber,10);
 	console.log(taskNumber);
-	console.log(olddata);
-	console.log(olddata.tasks[taskNumber]);
-	olddata.tasks[taskNumber].number = olddata.tasks.indexof(olddata.tasks[taskNumber]);
-	console.log(olddata.tasks[taskNumber].number);
-	var newData = olddata.tasks[taskNumber];
+	console.log(data);
+	console.log(data.oldTasks[taskNumber]);
+	//data.oldTasks[taskNumber].number = data['oldTasks'].indexof(data.oldTasks[taskNumber]);
+	console.log(data.oldTasks[taskNumber].number);
+	var newData = data.oldTasks[taskNumber];
 	newData.websites = data.websites;
 	res.render('taskReview', newData);
 	

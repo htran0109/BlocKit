@@ -35,7 +35,7 @@ ul.topnav li a:hover, a:active
 
 div.button{
      padding:5px;
-     font-size:26px;
+     font-size:20px;
      margin:3px;
      text-align: center;
      position:relative;
@@ -52,9 +52,21 @@ a.button{
 
 div.extra{
   display:table-cell;
-  width:33%;
+  width:20%;
   padding:2px;
-  font-size:26px;
+  font-size:20px;
+  margin:10px;
+  text-align: center;
+  position:relative;
+  border-style:solid;
+  border-width: 1px;
+}
+
+#details{
+  display:table-cell;
+  width:40%;
+  padding:2px;
+  font-size:20px;
   margin:10px;
   text-align: center;
   position:relative;
@@ -121,41 +133,47 @@ div.extra-holder{
   position:fixed;
   z-index:10;
   background:inherit;
+  width:100%;
+  background-color: #b9b9b9;
 
 }
 
 .buffer{
-  padding:20px;
+  padding-top:19px;
+  padding-bottom:18px;
+  
 }
 
 #header-holder{
   display:table;
   width: 100%;
   height:30px;
+  background-color: #b9b9b9;
 }
 
-#tasksButton {
+.tasksButton {
   display:table-cell;
-  width: 40%;
+  width: 30%;
   text-decoration: none;
+  text-align:center;
   color: white;
   background-color: #b91919;
   padding:7px 5px 7px 5px;
   height:30px;
 }
 
-#addTasksButton {
+/*#addTasksButton {
   display:table-cell;
   width: 20%;
   text-decoration: none;
   background-color: #b91919;
   padding:7px 10px 7px 5px;
   height:30px;
-}
+}*/
 
 #blockButton {
   display:table-cell;
-  width: 20%;
+  width: 25%;
   text-decoration: none;
   color: white;
   background-color: #b9b9b9;
@@ -175,7 +193,7 @@ div.extra-holder{
 
 #exitButton {
   display:table-cell;
-  width: 10%;
+  width: 15%;
   text-decoration: none;
   color: white;
   background-color: #b9b9b9;
@@ -184,6 +202,62 @@ div.extra-holder{
 }
 
 
-#blockText {
+#tasksText {
   color:white;
+  text-decoration: none;
+}
+
+
+#second-header-holder{
+  display:table;
+  width: 100%;
+  height:30px;
+  margin-left: 5%;
+}
+
+#todoButton {
+  display:table-cell;
+  border-right:solid;
+  width: 20%;
+  margin:5px;
+}
+
+#todoText {
+  color:#b91919;
+  text-align:center;
+  font-size:16px;
+  text-decoration: none;
+}
+
+
+#completedButton {
+  display:table-cell;
+  width: 20%;
+  padding-left:10px;
+}
+
+#completedText {
+  color:black;
+  text-align:center;
+  font-size:16px;
+  text-decoration: none;
+}
+
+#secondHeaderBuffer {
+  width:20%;
+  display:table-cell;
+
+}
+
+#addTaskButton {
+  width:30%;
+  display:table-cell;
+  text-decoration: none;
+}
+
+#addTaskText {
+  font-size:18px;
+  color:#b91919;
+  text-align:center;
+  text-decoration: none;
 }

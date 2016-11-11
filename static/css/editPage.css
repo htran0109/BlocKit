@@ -37,7 +37,7 @@
 }
 
 .dropbtn {
-  background-color: #ffffff;
+  background-color: #E8E3E3;
   color: black;
   padding: 3px;
   width: 300px;
@@ -281,4 +281,31 @@ a.button{
   color:#b91919;
   text-align:center;
   text-decoration: none;
+}
+
+#canceling{
+	color: white;
+	background-color: 595959;
+}
+
+#cancelingText{
+	color: white;
+}
+
+#delete{
+	color: white;
+	background-color: da1e2b;
+}
+
+#deleteText{
+	color: white;
+}
+
+#confirm{
+	color: white;
+	background-color: 17bebb;
+}
+
+#confirmText{
+	color: white;
 }

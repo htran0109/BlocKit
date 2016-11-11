@@ -1,5 +1,5 @@
 #appHeader{
-	background-color:ececec;
+	background-color:#ececec;
 	font-family: Montserrat;
 }
 
@@ -146,6 +146,7 @@ a.button{
   background:inherit;
   width:100%;
   background-color: #b9b9b9;
+  font-family: Montserrat;
 
 }
 
@@ -160,6 +161,7 @@ a.button{
   width: 100%;
   height:30px;
   background-color: #b9b9b9;
+  font-family: Montserrat;
 }
 
 .tasksButton {
@@ -216,4 +218,5 @@ a.button{
 #tasksText {
   color:black;
   text-decoration: none;
+  font-family: Montserrat;
 }

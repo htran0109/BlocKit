@@ -17,7 +17,7 @@
 			
 			<div class = "tasksButton">
 			<a href = "/runPage" id = "tasksText">
-				Tasks
+				TASKS
 				
 			
 			</a>
@@ -26,21 +26,21 @@
 			
 			<div id = "blockButton">
 					<a href = "/settings">
-						<img src = "../images/websiteblock.png" style = "width:30px;height:25px;"></img>
+						<img src = "../images/websiteblock.png" style = "width:35px;height:33px;"></img>
 					</a>
 			</div>
 			
 			
 			<div id = "helpButton">
 					<a href = "/help">
-						<img src = "../images/help.png" style = "width:20px;height:20px;"></img>
+						<img src = "../images/help.png" style = "width:35px;height:33px;"></img>
 					</a>
 			</div>
 			
 			
 			<div id = "exitButton">
 					<a href = "/">
-						<img src = "../images/exit.png" style = "width:20px;height:20px;"></img>
+						<img src = "../images/exit.png" style = "width:35px;height:33px;"></img>
 					</a>
 			</div>
 
@@ -60,16 +60,23 @@
 		<!-- Used to create room for top bar-->
 	</div>
 	
+	<div class = "buffer"> 
+		<!-- Used to create room for top bar-->
+	</div>
+	
+
+	
+	
 <div id = "second-header-holder">
 			
 			<div id = "todoButton">
 			<a href = "/runPage" id = "todoText">
-				To Do
+				TO DO
 			</a>
 			</div>
 			<div id = "completedButton">
 			<a href = "/history" id = "completedText">
-				History
+				HISTORY
 			</a>
 			</div>
 			<div id = "secondHeaderBuffer">
@@ -77,7 +84,7 @@
 			</div>
 			<div id = "addTaskButton">
 				<a href = "/createTask" id = "addTaskText">
-				+Add Task
+				+ADD TASK
 			</a>
 			</div>
 
@@ -94,37 +101,28 @@
 	{{#each tasks}}
 	<div class = "button" id = "id{{@index}}">
 		<a class = "button fontChange" id = "id{{@index}}Text">
-			{{title}}, Due: {{due_date}}, Duration: <br>{{hours}} Hours, {{minutes}} minutes</a>
-			<br>
+			<div class = "date-bar">
+			{{due_date}}
+			</div></a>
+			
 			<div class = "extra-holder">
-
 				<div  class = "extra"id = "details">
-					<div class = "dropdown">
-						<button onclick = "showDetails(dropDown{{@index}})"
-						class = "dropbtn fontChange" >Details
-						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
-					</img>
-				</button>
-
-			</div>
-		</div>
+					<div class = "taskdescription">
+					{{title}}<br>{{hours}} hours {{minutes}} minutes</a>
+					</div>
+				</div>
 		
 		<div class="extra">
 			<a href="/editScreen/{{@index}}" class = "button fontChange">
-			Edit
+			<img src = "../images/edit.png" style = "width:30px;height:30px;">
 			</a>
 		</div>
 		
 		<div class = "extra">
 			<a href = "/taskScreen/{{@index}}" class = "button fontChange">
-				Start
+			<img src = "../images/playicon.jpg" style = "width:30px;height:30px;">
 			</a>
 		</div>
-		<!--<div class = "extra" id = "delete" onClick = "taskDelete({{@index}})">
-				<a href = "/runPage" class = "button fontChange">
-				Delete
-			</a>
-		</div>-->
 		<div id = "number">
 			{{@index}}
 		</div>

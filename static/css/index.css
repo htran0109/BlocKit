@@ -30,10 +30,15 @@ body{
 div.button{
      padding: 5px;
      font-size:26px;
-	 margin: 50px 10px 0px 10px;
-	 width : 95%;
+	 margin: 50px 10px 0px 0px;
+	 width : 100%;
      text-align: center;
      position:relative;
 	 text-decoration: none;
 	 background-color: #da1e2b;
-	 }
+}
+
+#logo {
+
+	margin-top: 25%;
+}

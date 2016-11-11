@@ -217,7 +217,8 @@ a.button{
 #tasksText {
   color:black;
   text-decoration: none;
-  font-family: Montserrat;
+  font-size:18px;
+  font-family:Calibri;
 }
 
 #cancelButton{

@@ -1,11 +1,4 @@
-#appHeader{
-  background-color:ececec;
-  font-family: Montserrat;
-}
 
-.fontChange{
-  font-family: Montserrat;
-}
 
 #header{
   text-align: center;
@@ -19,17 +12,17 @@
 
 }
 
-.fontChange{
-	font-family: Montserrat;
-}
-
 .title {
   position: relative;
-  font-family: Verdana;
+  font-family: Montserrat;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 2px;
   font-size: 16px;
+}
+
+.fontChange {
+	font-family: Montserrat;
 }
 
 .input {
@@ -219,4 +212,23 @@ a.button{
 #tasksText {
   color:black;
   text-decoration: none;
+  font-family: Montserrat;
+}
+
+#cancelButton{
+	background-color: 595959;
+	color: ffffff;
+}
+
+#finButton{
+	background-color: 17bebb;
+	color: ffffff;
+}
+
+#confirm{
+	color: white;
+}
+
+#canButText{
+	color: white;
 }

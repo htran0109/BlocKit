@@ -7,30 +7,18 @@
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="../css/taskScreen.css" rel="stylesheet">
 	<link rel = "stylesheet" type = "text/css" href = "../css/taskScreen.css"></link>
-<title id = "title">
+	<title id = "title">
 		BlocKIT
 	</title>
-	<!--<h1>
-		<div id = "appHeader" class="fontChange">
-
-			<a href = "/runPage" >
-				<img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton">
-
-			</img>
-		</a>
-		Running Task...
-
-
-	</div>-->
-</h1>
 </head>
 <body>
+	<center>
 		<div id = "fixedHeader">
 		<div id = "header-holder">
 			
 			<div class = "tasksButton">
 			<a href = "/runPage" id = "tasksText">
-				Tasks
+				TASKS
 				
 			
 			</a>
@@ -39,7 +27,7 @@
 			
 			<div id = "blockButton">
 					<a href = "/settings">
-						<img src = "../images/websiteblock.png" style = "width:width:30px;height:25px;"></img>
+						<img src = "../images/websiteblock.png" style = "width:30px;height:25px;"></img>
 					</a>
 			</div>
 			
@@ -62,19 +50,21 @@
 
 	</div> 
 
-
-	<!--<h1 class="fontChange" id="appHeader">
-		<div>
-			<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>
-			Run Task
-		</div>
-	</h1>-->
 	<div class = "buffer"> 
 		<!-- Used to create room for top bar-->
 	</div>
-	<i class="fa fa-clock-o" aria-hidden="true"></i>
-	<div>
+	
+	<div class = "buffer">
+	</div>
 
+	<div class="title">
+		 CREATE A TASK 
+	</div>
+	
+	<div class="buffer">
+	</div>
+	
+	<div>
 		<textarea readonly rows="1" cols = "34" class = "input" maxlength = "40" class="fontChange" id = "taskName">{{title}}</textarea>
 	</div>
 	<div>
@@ -84,15 +74,15 @@
 
 		<textarea rows="1" cols = "34" class = "input" maxlength = "40" class="fontChange" id = "dueDate">{{due_date}}</textarea>
 	</div>
-	<div>
+	<div class = "fontChange">
 		<p class = "title fontChange">
 			TIME REMAINING
 		</p>
 
 		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "3" class="fontChange" id = "hours">{{hours}}</textarea>
-		hours:
+		HR
 		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "2" class="fontChange" id = "minutes">{{minutes}}</textarea>
-		minutes
+		MIN
 	</div>
 	<div>
 		<p class = "title fontChange">
@@ -132,15 +122,15 @@
 
 <div class = "button-holder">
 
-	<div  class = "button fontChange">
-	<a href = "/runPage" class = "button">
-		Task Menu</a>
+	<div  class = "button fontChange" id="cancelButton">
+	<a href = "/runPage" class = "button" id="canButText">
+		Cancel</a>
 	</div>
 	<!--<div  class = "button fontChange">
 	<a href = "/editScreen/{{number}}" class = "button">
 		Edit Task</a>
 	</div>-->
-	<div class = "button fontChange">
+	<div class = "button fontChange" id = "finButton">
     <a href = "/runPage" class = "button" id = "confirm">
     	I Finished!</a>
 	</div>
@@ -151,6 +141,7 @@
 	</script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/taskScreen.js"></script>
+	</center>
 </body>
 </html>
 

@@ -1,9 +1,10 @@
 body {
-	font-family: Montserrat;
+	font-family: Calibri;
 }
 
 .fontChange{
-	font-family: Montserrat;
+	font-family: Calibri;
+	font-size: 18px;
 }
 
 #appHeader{

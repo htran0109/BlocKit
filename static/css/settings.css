@@ -39,10 +39,9 @@ body {
   text-decoration: none;
   text-align:center;
   color: white;
-  background-color: #b91919;
+  background-color: #da1e2b;
   padding:7px 5px 7px 5px;
   height:30px;
-
 }
 
 .date-bar {
@@ -67,7 +66,7 @@ body {
   padding:7px 5px 7px 5px;
   height:30px;
   border-bottom:solid;
-  border-bottom-color: #da1e2b;
+  border-bottom-color: #000000;
 }
 
 #helpButton {

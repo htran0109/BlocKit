@@ -16,11 +16,16 @@
 		<div id = "header-holder">
 			
 			<div class = "tasksButton">
-			<a href = "/runPage" id = "tasksText">
+			<!--<a href = "/runPage" id = "tasksText">
 				TASKS
 				
 			
+			</a>-->
+			
+			<a href = "/runPage">
+			<img src = "../images/tasksbuttontext.png" style = "width:90px;height:33px;"></img>
 			</a>
+
 			</div>
 			
 			
@@ -66,22 +71,26 @@
 	
 <div id = "second-header-holder">
 			
-			<div id = "todoButton">
+			<!--<div id = "todoButton">
 			<a href = "/runPage" id = "todoText">
-				TO DO
+				TO DO TASKS
 			</a>
 			</div>
 			<div id = "completedButton">
 			<a href = "/history" id = "completedText">
 				HISTORY
 			</a>
-			</div>
+			</div>-->
+			
+			<p class = "taskTitle fontChange">
+			TO DO TASKS
+			</p>
 			<div id = "secondHeaderBuffer">
 
 			</div>
 			<div id = "addTaskButton">
 				<a href = "/createTask" id = "addTaskText">
-				+ADD TASK
+				 + ADD TASK
 			</a>
 			</div>
 
@@ -99,13 +108,13 @@
 	<div id = "id{{@index}}">
 		<a class = "button fontChange" id = "id{{@index}}Text">
 			<div class = "date-bar">
-			{{due_date}}
+			Due: {{due_date}}
 			</div></a>
 			
 			<div class = "extra-holder">
 				<div  class = "extra"id = "details">
 					<div class = "taskdescription">
-					{{title}}<br>{{hours}} hours {{minutes}} minutes</a>
+					{{title}}<br><font size = "3px">Duration: {{hours}} hours {{minutes}} minutes</font></a>
 					</div>
 				</div>
 		

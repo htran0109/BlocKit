@@ -134,7 +134,7 @@ div.extra-holder{
   z-index:10;
   background:inherit;
   width:100%;
-  background-color: #b9b9b9;
+  background-color: #d4d4d4;
 
 }
 
@@ -157,11 +157,11 @@ div.extra-holder{
   text-decoration: none;
   text-align:center;
   color: white;
-  background-color: #b91919;
+  background-color: #da1e2b;
   padding:7px 5px 7px 5px;
   height:30px;
   border-bottom:solid;
-  border-bottom-color: #da1e2b;
+  border-bottom-color: #000000;
 }
 
 .date-bar {
@@ -179,31 +179,31 @@ div.extra-holder{
 
 #blockButton {
   display:table-cell;
-  width: 25%;
+  width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #b9b9b9;
+  background-color: #d4d4d4;
   padding:7px 5px 7px 5px;
   height:30px;
 }
 
 #helpButton {
   display:table-cell;
-  width: 20%;
+  width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #b9b9b9;
+  background-color: #d4d4d4;
   padding:7px 5px 7px 5px;
   height:30px;
 }
 
 #exitButton {
   display:table-cell;
-  width: 10%;
+  width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #b9b9b9;
-  padding:10px 5px 5px 5px;
+  background-color: #d4d4d4;
+  padding:7px 5px 7px 5px;
   height:30px;
 }
 
@@ -225,19 +225,21 @@ div.extra-holder{
 
 #todoButton {
   display:table-cell;
-  border-right:solid;
-  text-align:right;
-  width: 20%;
-  margin:5px;
+  text-align:left;
+
 }
 
 #todoText {
-  color:#b91919;
-  text-align:right;
+  color:#000000;
+  text-align:left;
   font-size:16px;
   text-decoration: none;
 }
 
+.fontChange{
+	font-family: Montserrat;
+	font-size: 18px;
+}
 
 #completedButton {
   display:table-cell;
@@ -260,14 +262,18 @@ div.extra-holder{
 }
 
 #addTaskButton {
-  width:30%;
-  display:table-cell;
+  width:150px;
   text-decoration: none;
+  background-color: #da1e2b;
+  padding: 10px 22px;
+  display: inline-block;
+  border-radius: 6px;
 }
 
+
 #addTaskText {
-  font-size:18px;
-  color:#b91919;
+  font-size:16px;
+  color:#ffffff;
   text-align:center;
   text-decoration: none;
 }

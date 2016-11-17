@@ -1,6 +1,6 @@
 #appHeader{
 	background-color:#ececec;
-	font-family: Montserrat;
+	font-family: Calibri;
 }
 
 
@@ -17,7 +17,7 @@
 }
 
 .fontChange{
-	font-family: Montserrat;
+	font-family: Calibri;
 }
 
 .title {
@@ -189,7 +189,7 @@ a.button{
 
 #blockButton {
   display:table-cell;
-  width: 25%;
+  width: 15%;
   text-decoration: none;
   color: white;
   background-color: #d4d4d4;
@@ -199,7 +199,7 @@ a.button{
 
 #helpButton {
   display:table-cell;
-  width: 20%;
+  width: 15%;
   text-decoration: none;
   color: white;
   background-color: #d4d4d4;
@@ -209,7 +209,7 @@ a.button{
 
 #exitButton {
   display:table-cell;
-  width: 10%;
+  width: 15%;
   text-decoration: none;
   color: white;
   background-color: #d4d4d4;

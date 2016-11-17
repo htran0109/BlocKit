@@ -32,22 +32,27 @@
         "notes" : "Prepare for career fair"
     }
   ],
-
+  "websiteNumber": 5,
   "websites": [
     {
-        "title": "www.facebook.com"
+        "title": "www.facebook.com",
+        "checked": "checked"
     },
     {
-        "title": "www.twitter.com"
+        "title": "www.twitter.com",
+        "checked": "checked"
     },
     {
-        "title": "www.reddit.com"
+        "title": "www.reddit.com",
+        "checked": "checked"
     },
     {
-        "title": "www.youtube.com"
+        "title": "www.youtube.com",
+        "checked": "checked"
     },
     {
-        "title": "www.9gag.com"
+        "title": "www.9gag.com",
+        "checked": "checked"
     }
   ],
 

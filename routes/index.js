@@ -27,6 +27,7 @@ exports.editScreen = function(req, res){
 	console.log(data.tasks[taskNumber].number);
 	var newData = data.tasks[taskNumber];
 	newData.websites = data.websites;
+	newData.websiteNumber = data.websiteNumber;
 	res.render('editScreen', newData);
 	
 	
@@ -112,7 +113,23 @@ exports.webAdd = function(req, res) {
 
 	console.log(req.body);
 	data['websites'].push(req.body);
+	data['websiteNumber']++;
 	console.log(data);
+	res.json(data);
+}
+
+exports.webUnCheck = function(req, res) {
+	data['websites'][req.body['number']]['checked'] = "";
+	console.log(data['websites']);
+	data['websiteNumber']--;
+	res.json(data);
+}
+
+exports.webCheck = function(req, res) {
+
+    data['websites'][req.body['number']]['checked'] = "checked";
+    console.log(data['websites']);
+	data['websiteNumber']++;
 	res.json(data);
 }
 

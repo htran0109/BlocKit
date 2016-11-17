@@ -113,7 +113,7 @@
 		</p>
 		<div class = "dropdown fontChange" id = "webDropDown">
 			<button onclick = "showBlocked()"
-			class = "dropbtn">{{websites.length}} Blocked
+			class = "dropbtn">{{websiteNumber} Blocked
 			<img src = "../images/dropDown.png" style = "width:20;height:20px;">
 		</img>
 	</button>
@@ -126,7 +126,7 @@
 		{{title}}
 			<!--<img src = "../images/checkBox.png" style = "width:20px;height:20px;" >
 		</img>-->
-		<input class = "checkBox" type = "checkbox" checked = "checked">
+		<input class = "checkBox" id = "checkBox{{@index}}"type = "checkbox" {{checked}} onclick = "webCheck({{@index}})">
 	</input>
 </div>
 {{/each}}

@@ -1,0 +1,170 @@
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+		<title>BlocKIT</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../css/bootstrap.min.css" rel = "stylesheet">
+		<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="../css/runPageOld.css" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "../css/runPageOld.css"></link>
+	
+</head>
+<body>
+	<div id = "fixedHeader">
+		<div id = "header-holder">
+			
+			<div class = "tasksButton">
+			<a href = "/runPage" id = "tasksText">
+				TASKS
+				
+			
+			</a>
+			</div>
+			
+			
+			<div id = "blockButton">
+					<a href = "/settings">
+						<img src = "../images/websiteblock.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "helpButton">
+					<a href = "/help">
+						<img src = "../images/help.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "exitButton">
+					<a href = "/">
+						<img src = "../images/exit.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+
+
+		</div>
+
+	</div> 
+
+
+	<!--<h1 class="fontChange" id="appHeader">
+		<div>
+			<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>
+			Run Task
+		</div>
+	</h1>-->
+	<div class = "buffer"> 
+		<!-- Used to create room for top bar-->
+	</div>
+
+	
+
+	
+	
+<div id = "second-header-holder">
+			
+			<div id = "todoButton">
+			<a href = "/runPage" id = "todoText">
+				TO DO
+			</a>
+			</div>
+			<div id = "completedButton">
+			<a href = "/history" id = "completedText">
+				HISTORY
+			</a>
+			</div>
+			<div id = "secondHeaderBuffer">
+
+			</div>
+			<div id = "addTaskButton">
+				<a href = "/createTask" id = "addTaskText">
+				+ADD TASK
+			</a>
+			</div>
+
+
+
+</div>
+	<!--<ul class="topnav fontChange" id="myTopnav">
+
+	<li><a href="/runPage">To Do</a></li>
+	<li><a href="/history">Completed</a></li>
+
+	</ul>-->
+	
+	{{#each tasks}}
+	<div id = "id{{@index}}">
+		<a class = "button fontChange" id = "id{{@index}}Text">
+			<div class = "date-bar">
+			{{due_date}}
+			</div></a>
+			
+			<div class = "extra-holder">
+				<div  class = "extra"id = "details">
+					<div class = "taskdescription">
+					{{title}}<br>{{hours}} hours {{minutes}} minutes</a>
+					</div>
+				</div>
+		
+		<div class="extra">
+			<a href="/editScreen/{{@index}}" class = "button fontChange">
+			<img src = "../images/edit.png" style = "width:30px;height:30px;">
+			</a>
+		</div>
+		
+		<div class = "extra">
+			<a href = "/taskScreen/{{@index}}" class = "button fontChange">
+			<img src = "../images/playicon.jpg" style = "width:30px;height:30px;">
+			</a>
+		</div>
+		<div id = "number">
+			{{@index}}
+		</div>
+
+	</div>
+	<div id = "dropDown{{@index}}" class = "dropdown-content fontChange">
+		<div class = "inner-content fontChange">
+			{{notes}}
+		</div>
+
+	</div>
+	</div>
+	{{/each}}
+	<!--<div class = "button" id = "task1">
+		<a class = "button" id = "task1Text">
+			Math Homework, Due 11/5, Will take 4 hours, 0 Minutes</a>
+			<br>
+			<div class = "extra-holder">
+				<div  class = "extra">
+					<div class = "dropdown">
+						<button onclick = "showDetails()"
+						class = "dropbtn">Details
+						<img src = "../images/dropDown.png" style = "width:20;height:20px;">
+					</img>
+				</button>
+			</div>
+		</div>
+		<div class = "extra">
+			<a href = "/pages/taskScreen.html" class = "button">
+				Start
+			</a>
+		</div>
+	</div>
+	<div id = "detailDropdown" class = "dropdown-content">
+		<div class = "inner-content">
+			Pages 120-122, Problems 21 - 30, 40 - 45
+		</div>
+	</div>
+	</div>-->
+	<!--<div class = "button">
+		<a class ="button fontChange" href = "/homepage"> Back To Home </a>
+	</div>-->
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src = "../js/runPageOld.js"></script>
+</body>
+</html>

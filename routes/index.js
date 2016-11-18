@@ -75,6 +75,11 @@ exports.runTask = function(req, res){
 	res.render('runTask', data);
 };
 
+exports.runTask2 = function(req, res){
+    console.log(data);
+    res.render('runTaskOld', data);
+};
+
 exports.settings = function(req, res){
 	console.log(data);
 	res.render('settings', data);

@@ -24,6 +24,9 @@ function initialize() {
 		console.log("detailDropdown" + event.target.id);
 		document.getElementById("detailDropdown" + event.target.id).classList.toggle("show");
 	});*/
+    $(".addTaskButton").click(function(){
+      ga('send', 'Create', 'button', 'click');
+    });
 }
 
 

@@ -254,6 +254,35 @@ div.extra-holder{
   font-size:16px;
   text-decoration: none;
 }
+#todoButtonOld {
+  display:table-cell;
+  border-right:solid;
+  text-align:right;
+  width: 20%;
+  margin:5px;
+}
+
+#todoTextOld {
+  color:#b91919;
+  text-align:right;
+  font-size:16px;
+  text-decoration: none;
+}
+
+
+#completedButtonOld {
+  display:table-cell;
+  width: 15%;
+  margin: 0px;
+  padding-left:1px;
+}
+
+#completedTextOld {
+  color:black;
+  text-align:center;
+  font-size:16px;
+  text-decoration: none;
+}
 
 #secondHeaderBuffer {
   width:20%;
@@ -270,10 +299,23 @@ div.extra-holder{
   border-radius: 6px;
 }
 
+#addTaskButtonOld {
+  width:30%;
+  display:table-cell;
+  text-decoration: none;
+}
+
 
 #addTaskText {
   font-size:16px;
   color:#ffffff;
+  text-align:center;
+  text-decoration: none;
+}
+
+#addTaskTextOld {
+  font-size:18px;
+  color:#b91919;
   text-align:center;
   text-decoration: none;
 }

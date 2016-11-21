@@ -12,6 +12,84 @@
 	
 </head>
 <body>
+	{{#if showAlternate}}
+			<div id = "fixedHeader">
+		<div id = "header-holder">
+			
+			<div class = "tasksButton">
+			<a href = "/runPage" id = "tasksText">
+				TASKS
+				
+			
+			</a>
+			</div>
+			
+			
+			<div id = "blockButton">
+					<a href = "/settings">
+						<img src = "../images/websiteblock.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "helpButton">
+					<a href = "/help">
+						<img src = "../images/help.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+			
+			
+			<div id = "exitButton">
+					<a href = "/">
+						<img src = "../images/exit.png" style = "width:35px;height:33px;"></img>
+					</a>
+			</div>
+
+
+		</div>
+
+	</div> 
+
+
+	<!--<h1 class="fontChange" id="appHeader">
+		<div>
+			<a href = "/homepage" ><img src = "../images/back.png" style = "width:60px;height:60px;" id = "backButton"></a>
+			Run Task
+		</div>
+	</h1>-->
+	<div class = "buffer"> 
+		<!-- Used to create room for top bar-->
+	</div>
+
+	
+
+	
+	
+<div id = "second-header-holder">
+			
+			<div id = "todoButtonOld">
+			<a href = "/runPage" id = "todoTextOld">
+				TO DO
+			</a>
+			</div>
+			<div id = "completedButtonOld">
+			<a href = "/history" id = "completedTextOld">
+				HISTORY
+			</a>
+			</div>
+			<div id = "secondHeaderBuffer">
+
+			</div>
+			<div id = "addTaskButtonOld">
+				<a href = "/createTask" id = "addTaskTextOld">
+				+ADD TASK
+			</a>
+			</div>
+
+
+
+</div>
+    {{else}}
 	<div id = "fixedHeader">
 		<div id = "header-holder">
 			
@@ -97,6 +175,8 @@
 
 
 </div>
+
+{{/if}}
 	<!--<ul class="topnav fontChange" id="myTopnav">
 
 	<li><a href="/runPage">To Do</a></li>
@@ -175,5 +255,15 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src = "../js/runPage.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87745863-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

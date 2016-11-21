@@ -72,12 +72,14 @@ exports.taskReview = function(req, res){
 
 exports.runTask = function(req, res){
 	console.log(data);
+	data['showAlternate'] = false;
 	res.render('runTask', data);
 };
 
 exports.runTask2 = function(req, res){
     console.log(data);
-    res.render('runTaskOld', data);
+    data['showAlternate'] = true;
+    res.render('runTask', data);
 };
 
 exports.settings = function(req, res){

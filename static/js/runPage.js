@@ -19,13 +19,18 @@ function taskDelete(index) {
 	$.post('/taskDelete', data)
 }
 
+function uploadData() {
+
+	ga('send', 'event', 'create', 'click');
+}
+
 function initialize() {
 	/*$("button").click(function(event)){
 		console.log("detailDropdown" + event.target.id);
 		document.getElementById("detailDropdown" + event.target.id).classList.toggle("show");
 	});*/
     $(".addTaskButton").click(function(){
-      ga('send', 'create', 'event', 'click');
+      ga('send', 'event', 'create', 'click');
     });
 }
 

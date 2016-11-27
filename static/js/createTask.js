@@ -93,12 +93,20 @@ function initialize() {
 		var minutes = $('#minutes').val();
 		var notes = $('#notes').val();
 		var number = document.getElementById("number").innerHTML;
-		console.log(number);
-		number = parseInt(number);
-		console.log(taskName + "\n" + dueDate + "\n" + hours + "\n" + minutes + "\n" + notes + "\n" + number);
-		data = {"title": taskName, "id": "id"+number, "number":number, 
-		"dropDown": "detailDropdown"+number, "due_date":dueDate, "hours":hours, "minutes":minutes, "notes":notes}
-		$.post('/taskAdd', data);
+		if(taskName && dueDate && hours && minutes
+		    &&parseInt(hours) && parseInt(minutes)) {
+			console.log(number);
+			number = parseInt(number);
+			console.log(taskName + "\n" + dueDate + "\n" + hours + "\n" + minutes + "\n" + notes + "\n" + number);
+			data = {"title": taskName, "id": "id"+number, "number":number, 
+			"dropDown": "detailDropdown"+number, "due_date":dueDate, "hours":hours, "minutes":minutes, "notes":notes}
+			$.post('/taskAdd', data);
+			document.location.href = '/runPage';
+		}
+		else {
+
+			errorCreate();
+		}
 	});
 
 }

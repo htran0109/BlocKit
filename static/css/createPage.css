@@ -305,3 +305,7 @@ a.button{
 #createText{
 	color: white;
 }
+
+.innerErr{
+  display:none;
+}

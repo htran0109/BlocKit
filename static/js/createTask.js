@@ -4,6 +4,11 @@ $(document).ready(function() {
 	initialize();
 })
 
+function errorCreate() {
+	$("#errMessage").addClass("show");
+	console.log("error");
+}
+
 function showBlocked() {
 	document.getElementById("blockDropdown").classList.toggle("show");
 }
@@ -55,7 +60,13 @@ function webCheck(number) {
 
 }
 function initialize() {
-
+	$(document).click(function(event) { 
+    if(!$(event.target).closest('#errMessage').length) {
+    	if($("#errMessage").hasClass("show")) {
+    	  $("#errMessage").removeClass("show");
+        }
+    }        
+	});
 	$("#webAdd").click(function() {
 		var webString = $('#websiteText').val();
 		var html = $('#blockDropdown').html();
@@ -105,7 +116,7 @@ function initialize() {
 		}
 		else {
 
-			errorCreate();
+			setTimeout( errorCreate, 50);
 		}
 	});
 

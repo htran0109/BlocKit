@@ -1,35 +1,35 @@
 #appHeader{
 	background-color:#ececec;
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 }
 
 h3{
-  font-family:Montserrat, Calibri;
+  font-family:Montserrat, Verdana;
   padding: 5px;
   margin: 10px 5% 5% 5%;
 
 }
 
 h4{
-  font-family:Montserrat, Calibri;
+  font-family:Montserrat, Verdana;
   padding: 2px;
   margin: 10px 5% 5% 5%;
 
 }
 
 h5{
-	font-family:Montserrat, Calibri;
+	font-family:Montserrat, Verdana;
 	padding: 5px;
 	margin: 10px 5% 5% 5%;
 
 }
 
 li{
-  font-family:Montserrat, Calibri;
+  font-family:Montserrat, Verdana;
 }
 
 p{
-  font-family:Montserrat, Calibri;
+  font-family:Montserrat, Verdana;
   padding: 5px;
   margin: 10px 5% 5% 5%;
 
@@ -39,7 +39,7 @@ p{
 body{
 
 	font-size:18px;
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 	
 }
 
@@ -78,7 +78,7 @@ button.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -219,7 +219,7 @@ p{
   color:black;
   text-decoration: none;
   font-size:18px;
-  font-family:Calibri;
+  font-family: Montserrat, Verdana;
 }
 
 

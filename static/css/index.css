@@ -2,19 +2,19 @@
    font-size:46px; 
    text-align: center;
    position: relative; 
-   font-family: Montserrat, Calibri;
+   font-family: Montserrat, Verdana;
 }
 
 h1{
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 }
 
 p{
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 }
 
 a{
-	font-family: Montserrat, Calibri;
+	font-family: Montserrat, Verdana;
 	color: #13112b;
 	text-decoration: none;
 }

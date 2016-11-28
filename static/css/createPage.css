@@ -7,7 +7,7 @@
 
 #appHeader{
 	background-color:ececec;
-	font-family: calibri;
+	font-family: Montserrat, Verdana;
 }
 
 #header{
@@ -24,7 +24,7 @@
 
 .title {
   position: relative;
-  font-family: calibri;
+  font-family: Montserrat, Verdana;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 2px;
@@ -124,7 +124,7 @@ a.button{
   border-width:1px;
   padding-top:5px;
   padding-bottom:5px;
-  font-family: Calibri;
+  font-family: Verdana;
   font-size:14px;
 }
 
@@ -137,7 +137,7 @@ a.button{
 }
 
 .fontChange{
-	font-family: calibri;
+	font-family: Montserrat, Verdana;
 }
 
 #number{
@@ -228,7 +228,7 @@ a.button{
   color:black;
   text-decoration: none;
   font-size:18px;
-  font-family:Calibri;  
+  font-family: Montserrat, Verdana;  
 }
 
 

@@ -134,7 +134,7 @@ div.extra-holder{
   z-index:10;
   background:inherit;
   width:100%;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
 
 }
 
@@ -157,11 +157,9 @@ div.extra-holder{
   text-decoration: none;
   text-align:center;
   color: white;
-  background-color: #da1e2b;
+  background-color: #dcdcdc;
   padding:7px 5px 7px 5px;
   height:30px;
-  border-bottom:solid;
-  border-bottom-color: #000000;
 }
 
 .date-bar {
@@ -183,7 +181,7 @@ div.extra-holder{
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }
@@ -193,7 +191,7 @@ div.extra-holder{
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }
@@ -203,7 +201,7 @@ div.extra-holder{
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }

@@ -154,3 +154,10 @@ body {
   text-align:center;
   text-decoration: none;
 }
+
+h3{
+  font-family:Montserrat, Calibri;
+  padding: 5px;
+  margin: 10px 5% 5% 5%;
+
+}

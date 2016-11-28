@@ -222,12 +222,12 @@ a.button{
 }
 
 #cancelButton{
-	background-color: 595959;
+	background-color: 1b1b1b;
 	color: ffffff;
 }
 
 #finButton{
-	background-color: 17bebb;
+	background-color: da1e2b;
 	color: ffffff;
 }
 
@@ -237,4 +237,17 @@ a.button{
 
 #canButText{
 	color: white;
+}
+
+#timer {
+	width: 250px;
+	height: 250px;
+	border: 5px solid #5ab1bb;
+	-moz-border-radius: 125px;
+	-webkit-border-radius: 125px;
+	border-radius: 125px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 250px;
+	font-size: 150%;
 }

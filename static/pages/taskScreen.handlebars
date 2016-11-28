@@ -64,38 +64,38 @@
 
 
 	<div class="title" id="creTask">
-		 RUNNING TASK
+		<h3> RUNNING TASK </h3>
 	</div>
 	
 	<div class="buffer">
 	</div>
 	
 	<div>
-		<textarea readonly rows="1" cols = "34" class = "input" maxlength = "40" class="fontChange" id = "taskName">{{title}}</textarea>
+		<h2>{{title}}</h2>
 	</div>
 	<div>
 		<p class = "title fontChange">
 			DUE DATE
 		</p>
 
-		<textarea rows="1" cols = "34" class = "input" maxlength = "40" class="fontChange" id = "dueDate">{{due_date}}</textarea>
+		{{due_date}}
 	</div>
 	<div class = "fontChange">
 		<p class = "title fontChange">
 			TIME REMAINING
 		</p>
-
-		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "3" class="fontChange" id = "hours">{{hours}}</textarea>
-		HR
-		<textarea readonly rows="1" cols = "11" class = "input" maxlength = "2" class="fontChange" id = "minutes">{{minutes}}</textarea>
-		MIN
+		<div id = "timer">
+			{{hours}}
+			:
+			{{minutes}}
+		</div>
 	</div>
 	<div>
 		<p class = "title fontChange">
 			NOTES
 		</p>
 
-		<textarea readonly rows="7" cols = "34" class = "input" maxlength = "280" class="fontChange" id = "notes">{{notes}}</textarea>
+		{{notes}}
 	</div>
 	<div>
 		<p class = "title fontChange">

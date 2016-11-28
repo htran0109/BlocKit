@@ -127,8 +127,8 @@ exports.webAdd = function(req, res) {
 	res.json(data);
 }
 
-exports.webUnCheck = function(req, res) {
-	data['websites'][req.body['number']]['checked'] = "";
+exports.webDelete = function(req, res) {
+	data['websites'].splice(req.body['number'],1);
 	console.log(data['websites']);
 	data['websiteNumber']--;
 	res.json(data);

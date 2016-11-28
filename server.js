@@ -47,7 +47,7 @@ app.get('/help', index.help);
 app.get('/register', index.register);
 app.post('/webAdd', index.webAdd);
 app.post('/webCheck', index.webCheck);
-app.post('/webUnCheck', index.webUnCheck);
+app.post('/webDelete', index.webDelete);
 app.post('/taskAdd', index.taskAdd);
 app.post('/taskEdit', index.taskEdit);
 app.post('/taskDelete', index.taskDelete);

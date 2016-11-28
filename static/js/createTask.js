@@ -22,7 +22,7 @@ function webCheck(number) {
 	if(!$('#' + checkId).is(":checked")) {
 		$.ajax({
 			type: 'POST',
-			url: '/webUnCheck',
+			url: '/webDelete',
 			data: data,
 			success: function(reply) {
 				//html = html.substring(0, html.length - 6);
@@ -34,6 +34,22 @@ function webCheck(number) {
 					'class = "dropbtn">' + reply['websiteNumber']+' Blocked' +
 					'<img src = "../images/dropDown.png" style = "width:20;height:20px;">' +
 					'</img>');
+				$('#website'+number).html('');
+				$('#website'+number).removeClass('inner-content');
+				$('.inner-content').each(function(index) {
+			      console.log(index);
+                  $(this).attr("id","website" + index);
+                  console.log($(this).attr('id'));
+				});
+				$('.checkBox').each(function(index){
+				  console.log($(this).attr("id"));
+				  console.log($(this).attr("onclick"));
+                  //$(this).html('<input class = "checkBox" id = "checkBox' + index + '"type = "checkbox" {{checked}} onclick = "webCheck(' +index+')">');
+                  $(this).attr("onclick","webCheck(" + index + ")");
+                  $(this).attr("id","checkBox"+index);
+                  console.log($(this).attr("id"));
+				  console.log(index);
+				});
 			}
 		//$.post('/webAdd', data);
 	});

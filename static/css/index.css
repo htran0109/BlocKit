@@ -2,19 +2,19 @@
    font-size:46px; 
    text-align: center;
    position: relative; 
-   font-family: Montserrat;
+   font-family: Montserrat, Calibri;
 }
 
 h1{
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 }
 
 p{
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 }
 
 a{
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 	color: #13112b;
 	text-decoration: none;
 }

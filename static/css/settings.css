@@ -1,9 +1,9 @@
 body {
-	font-family: Calibri;
+	font-family: Montserrat, Calibri;
 }
 
 .fontChange{
-	font-family: Calibri;
+	font-family: Montserrat, Calibri;
 	font-size: 18px;
 }
 
@@ -95,7 +95,7 @@ body {
   color:black;
   text-decoration: none;
   font-size:18px;
-  font-family:Calibri;
+  font-family: Montserrat, Calibri;
 }
 
 

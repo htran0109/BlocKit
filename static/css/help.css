@@ -1,31 +1,35 @@
 #appHeader{
 	background-color:#ececec;
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 }
 
-h1{
-	font-family:Montserrat;
-	padding: 5px;
-	margin: 10px 5% 5% 5%;
-
-}
-
-h2{
-  font-family:Montserrat;
+h3{
+  font-family:Montserrat, Calibri;
   padding: 5px;
   margin: 10px 5% 5% 5%;
 
 }
 
 h4{
-  font-family:Montserrat;
-  padding: 5px;
+  font-family:Montserrat, Calibri;
+  padding: 2px;
   margin: 10px 5% 5% 5%;
 
 }
 
+h5{
+	font-family:Montserrat, Calibri;
+	padding: 5px;
+	margin: 10px 5% 5% 5%;
+
+}
+
+li{
+  font-family:Montserrat, Calibri;
+}
+
 p{
-  font-family:Montserrat;
+  font-family:Montserrat, Calibri;
   padding: 5px;
   margin: 10px 5% 5% 5%;
 
@@ -35,7 +39,7 @@ p{
 body{
 
 	font-size:18px;
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 	
 }
 
@@ -60,7 +64,7 @@ a.button{
 }
 
 #tagline{
-	margin: -10px 0px 0px 0px;
+	margin: -20px 0px 0px 0px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -74,7 +78,7 @@ button.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
-	font-family: Montserrat;
+	font-family: Montserrat, Calibri;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

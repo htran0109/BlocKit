@@ -17,7 +17,7 @@ body {
   z-index:10;
   background:inherit;
   width:100%;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
 
 }
 
@@ -31,7 +31,7 @@ body {
   display:table;
   width: 90%;
   height:30px;
-  background-color: #b9b9b9;
+  background-color: #fafafa;
 }
 
 .tasksButton {
@@ -39,8 +39,9 @@ body {
   width: 30%;
   text-decoration: none;
   text-align:center;
-  color: white;
-  background-color: #da1e2b;
+  border-bottom: solid;
+  border-color: #dcdcdc;
+  background-color: #dcdcdc;
   padding:7px 5px 7px 5px;
   height:30px;
 }
@@ -63,19 +64,20 @@ body {
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
-  border-bottom:solid;
-  border-bottom-color: #000000;
 }
+/*  border-bottom:solid;
+  border-bottom-color: #000000;
+  */
 
 #helpButton {
   display:table-cell;
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }
@@ -85,7 +87,7 @@ body {
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }

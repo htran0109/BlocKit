@@ -15,16 +15,16 @@ function showBlocked() {
 function timeTask() {
 	
 
-	var hours = $("#hours").val();
+	var hours = $("#hours").text();
     var hoursInt = parseInt(hours);
-    var minutes = $("#minutes").val();
-    console.log(minutes);
+    var minutes = $("#minutes").text();
+    console.log("HelloWorld" + minutes);
     var minutesInt = parseInt(minutes);
     var totalMinutes = hoursInt * 60 + minutesInt;
     totalMinutes--;
     if(totalMinutes >= 0) {
-      $('#hours').val(Math.floor(totalMinutes / 60));
-      $('#minutes').val(totalMinutes % 60);
+      $('#hours').text(Math.floor(totalMinutes / 60));
+      $('#minutes').text(totalMinutes % 60);
     }
 }
 

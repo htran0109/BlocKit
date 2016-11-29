@@ -138,6 +138,23 @@ a.button{
 #number {
   display:none;
 }
+
+#fixedHeader{
+  text-align: center;
+  position:fixed;
+  z-index:10;
+  background:inherit;
+  width:100%;
+  background-color: #fafafa;
+
+}
+
+.buffer{
+  padding-top:38px;
+  padding-bottom:36px;
+  
+}
+
 #header-holder{
   display:table;
   width: 90%;

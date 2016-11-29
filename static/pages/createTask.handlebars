@@ -6,6 +6,7 @@
 	<link href="../css/bootstrap.min.css" rel = "stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="../css/createPage.css" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href= "../css/w3.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/createPage.css"></link>
 	<title id = "title">
 		BlocKIT
@@ -74,6 +75,11 @@
 
 <body>
 <center>
+	<div>
+		<div class = "w3-panel w3-red w3-round innerErr" id = "errMessage">
+			<strong>Error!</strong> Make sure you input a Title, Date, and a number for hours and minutes.
+		</div>
+	</div>
 	<div class="fontChange">
 		<p class = "title">
 			TASK NAME
@@ -148,12 +154,6 @@
 		Create!</a>
 	</div>
 
-</div>
-
-<div >
-	<div class = "innerErr" id = "errMessage">
-		There was an error parsing your task. Make sure you input a Title, Date, and a number for hours and minutes.
-	</div>
 </div>
 
 <div id = "number">

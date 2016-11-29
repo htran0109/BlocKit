@@ -76,7 +76,7 @@
 }
 
 div.button-holder{
-
+	padding-top: 25px;
      margin-left: 10px;
      margin-top: 20px;
      text-align: center;
@@ -289,7 +289,7 @@ a.button{
 
 #canceling{
 	color: white;
-	background-color: 595959;
+	background-color: 1b1b1b;
 }
 
 #cancelingText{
@@ -308,6 +308,17 @@ a.button{
 .w3-panel{
 	width: 300px;
 	font-family: Montserrat, Verdana;
+}
+
+h4{
+	font-family: Montserrat, Verdana;
+	font-weight: Bold;
+}
+
+h3{
+  font-family:Montserrat, Verdana;
+  padding: 5px;
+  margin: 10px 5% 5% 5%;
 }
 
 .innerErr{

@@ -1,3 +1,10 @@
+h3{
+  font-family:Montserrat, Verdana;
+  padding: 5px;
+  margin: 10px 5% 5% 5%;
+}
+
+
 #appHeader{
 	background-color:#ececec;
 	font-family: Montserrat, Verdana;
@@ -80,7 +87,6 @@ div.button-holder{
      margin-left: 10px;
      margin-top: 20px;
      text-align: center;
-     position:relative;
      width: 300px;
      display: table;
      margin-bottom: 20px;
@@ -90,13 +96,12 @@ div.button {
   display:table-cell;
   width:50%;
   padding:10px;
-  font-size:18px;
+  font-size:14px;
   margin:10px;
   text-align: center;
-  position:relative;
   border-style:solid;
   border-width: 1px;
-  width: 300px;
+  width: 100px;
 }
 
 
@@ -138,13 +143,17 @@ a.button{
   display:none;
 }
 
+#appHeader{
+	background-color:ececec;
+}
+
 #fixedHeader{
   text-align: center;
   position:fixed;
   z-index:10;
   background:inherit;
   width:100%;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
 
 }
 
@@ -158,7 +167,7 @@ a.button{
   display:table;
   width: 90%;
   height:30px;
-  background-color: #b9b9b9;
+  background-color: #fafafa;
 }
 
 .tasksButton {
@@ -166,12 +175,11 @@ a.button{
   width: 30%;
   text-decoration: none;
   text-align:center;
-  color: white;
-  background-color: #da1e2b;
+  border-bottom: solid;
+  border-color: #dcdcdc;
+  background-color: #dcdcdc;
   padding:7px 5px 7px 5px;
   height:30px;
-  border-bottom:solid;
-  border-bottom-color: #da1e2b;
 }
 
 .date-bar {
@@ -192,17 +200,20 @@ a.button{
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }
+/*  border-bottom:solid;
+  border-bottom-color: #000000;
+  */
 
 #helpButton {
   display:table-cell;
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
+  background-color: #fafafa;
   padding:7px 5px 7px 5px;
   height:30px;
 }
@@ -212,8 +223,8 @@ a.button{
   width: 15%;
   text-decoration: none;
   color: white;
-  background-color: #d4d4d4;
-  padding:10px 5px 5px 5px;
+  background-color: #fafafa;
+  padding:7px 5px 7px 5px;
   height:30px;
 }
 
@@ -282,9 +293,58 @@ a.button{
   text-decoration: none;
 }
 
+#todoButton {
+  display:table-cell;
+  border-right:solid;
+  text-align:right;
+  width: 20%;
+  margin:5px;
+}
+
+#todoText {
+  color:#b91919;
+  text-align:right;
+  font-size:16px;
+  text-decoration: none;
+}
+
+
+#completedButton {
+  display:table-cell;
+  width: 15%;
+  margin: 0px;
+  padding-left:1px;
+}
+
+#completedText {
+  color:black;
+  text-align:center;
+  font-size:16px;
+  text-decoration: none;
+}
+
+#secondHeaderBuffer {
+  width:20%;
+  display:table-cell;
+
+}
+
+#addTaskButton {
+  width:30%;
+  display:table-cell;
+  text-decoration: none;
+}
+
+#addTaskText {
+  font-size:18px;
+  color:#b91919;
+  text-align:center;
+  text-decoration: none;
+}
+
 #canceling{
 	color: white;
-	background-color: 595959;
+	background-color: 5ab1bb;
 }
 
 #cancelingText{
@@ -293,18 +353,140 @@ a.button{
 
 #delete{
 	color: white;
-	background-color: da1e2b;
+	background-color: 5ab1bb;
 }
 
 #deleteText{
 	color: white;
 }
 
+#deleteCancel{
+	color: white;
+	background-color: 1b1b1b;
+}
+
 #confirm{
 	color: white;
-	background-color: 17bebb;
+	background-color: 5ab1bb;
 }
 
 #confirmText{
 	color: white;
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 45% auto; /* 15% from the top and centered */
+    padding: 20px;
+	border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+	margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+  display:table-cell;
+  width:50%;
+  padding:10px;
+  font-size:18px;
+  text-align: center;
+  display: inline;
+  position:relative;
+  border-style:solid;
+  border-width: 1px;
+  width: 100px;
+  color: white;
+  background-color: 5ab1bb;
+}
+
+
+
+.close2 {
+    color: #aaa;
+    float: right;
+	margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn2 {
+  display:table-cell;
+  width:50%;
+  padding:10px;
+  font-size:18px;
+  text-align: center;
+  display: inline;
+  position:relative;
+  border-style:solid;
+  border-width: 1px;
+  width: 100px;
+  color: white;
+  background-color: da1e2b;
+}
+
+.close3 {
+    color: #aaa;
+    float: right;
+	margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn3 {
+  display:table-cell;
+  width:50%;
+  padding:10px;
+  font-size:18px;
+  text-align: center;
+  display: inline;
+  position:relative;
+  border-style:solid;
+  border-width: 1px;
+  width: 100px;
+  color: white;
+  background-color: 1b1b1b;
+}
+
+

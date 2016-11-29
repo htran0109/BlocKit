@@ -31,7 +31,7 @@
 			
 			<div class = "tasksButton">
 			<a href = "/runPage" id = "tasksText">
-				<img src = "../images/tasksbuttontext.png" style = "width:90px;height:33px;"></img>
+				<img src = "../images/tasksbuttontext2.png" style = "width:75px;height:28px;"></img>
 			</a>
 			</div>
 			
@@ -71,7 +71,7 @@
 	<div class = "buffer"> 
 		<!-- Used to create room for top bar-->
 	</div>
-
+	<h3>EDIT TASK</h3>
 
 	<div>
 		<p class = "title fontChange">
@@ -135,8 +135,94 @@
 </div>
 
 <div class = "button-holder">
+	
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn3">Cancel</button>
 
-	<div  class = "button" id="canceling">
+	<!-- The Modal -->
+	<div id="myModal3" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<span class="close3">x</span>
+		<p><center>Are you sure you want to cancel?</p>
+		
+		<div  class = "button" id = "deleteCancel">
+		<a href = "/editScreen" class = "button fontChange" id="deleteText">
+		No</a>
+		</div>
+		
+		<div  class = "button" id="canceling">
+		<a href = "/runPage" class = "button fontChange" id="cancelingText">
+		Yes</a>
+		</div>
+
+		
+		
+		</center>
+	  </div>
+	  </div>
+	
+	
+	
+	
+	
+		  <!-- Trigger/Open The Modal -->
+	<button id="myBtn2">Delete</button>
+
+	<!-- The Modal -->
+	<div id="myModal2" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<span class="close2">x</span>
+		<p><center>Are you sure you want to delete?</p>
+		
+		<div  class = "button" id = "deleteCancel">
+		<a href = "/editScreen" class = "button fontChange" id="deleteText">
+		Cancel</a>
+		</div>
+		
+		<div  class = "button" id = "delete">
+		<a href = "/runPage" class = "button fontChange" id="deleteText">
+		Confirm</a>
+		</div>
+
+		</center>
+	  </div>
+	  </div>
+	
+	
+	
+	
+	
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn">Save</button>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<span class="close">x</span>
+		<p><center>Your changes have been saved.</p>
+			<div  class = "button" id = "confirm">
+		<a href = "/runPage" class = "button fontChange" id="confirmText">
+		Confirm</a>
+		</div>
+		</center>
+	  </div>
+	  </div>
+	
+	  
+	  
+	  
+
+	</div>
+</div>
+
+<!--
+<div  class = "button" id="canceling">
 	<a href = "/runPage" class = "button fontChange" id="cancelingText">
 		Cancel</a>
 	</div>
@@ -148,8 +234,8 @@
 	<a href = "/runPage" class = "button fontChange" id="confirmText">
 		Confirm</a>
 	</div>
+-->
 
-</div>
 
 <div id = "number">
 {{number}}
@@ -169,6 +255,95 @@
 
   ga('create', 'UA-87745863-1', 'auto');
   ga('send', 'pageview');
+  
+  
+  
+  
+  // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+var modal2 = document.getElementById('myModal2');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal.style.display = "none";
+    }
+}
+
+
+var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal.style.display = "none";
+    }
+}
+
+
+
 
 </script>
 </body>

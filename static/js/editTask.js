@@ -71,7 +71,10 @@ function webCheck(number) {
 		});
 	}
 }
-
+function errorCreate() {
+	$("#errMessage").addClass("show");
+	console.log("error");
+}
 function initialize() {
 
 
@@ -112,9 +115,16 @@ function initialize() {
 		console.log(number);
 		number = parseInt(number);
 		console.log(taskName + "\n" + dueDate + "\n" + hours + "\n" + minutes + "\n" + notes + "\n" + number);
+		if(taskName && dueDate && hours && minutes
+		&&parseInt(hours) && parseInt(minutes)) {
 		data = {"title": taskName, "id": "id"+number, "number":number, 
 		"dropDown": "detailDropdown"+number, "due_date":dueDate, "hours":hours, "minutes":minutes, "notes":notes}
 		$.post('/taskEdit', data);
+		document.location.href = '/runPage';
+	    }
+        else {
+        	setTimeout( errorCreate, 50);
+        }
 	});
 
 	$("#delete").click(function() {

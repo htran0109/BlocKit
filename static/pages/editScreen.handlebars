@@ -6,6 +6,7 @@
 	<link href="../css/bootstrap.min.css" rel = "stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="../css/editPage.css" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href= "../css/w3.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/editPage.css"></link>
 	<title id = "title">
 		BlocKIT
@@ -72,7 +73,11 @@
 		<!-- Used to create room for top bar-->
 	</div>
 	<h3>EDIT TASK</h3>
-
+	<div>
+		<div class = "w3-panel w3-red w3-round innerErr" id = "errMessage">
+			<h4>Error!</h4> Make sure you input a Title, Date, and a number for hours and minutes.
+		</div>
+	</div>
 	<div>
 		<p class = "title fontChange">
 			TASK NAME
@@ -205,9 +210,9 @@
 	  <!-- Modal content -->
 	  <div class="modal-content">
 		<span class="close">x</span>
-		<p><center>Your changes have been saved.</p>
+		<p><center>Save these Changes?</p>
 			<div  class = "button" id = "confirm">
-		<a href = "/runPage" class = "button fontChange" id="confirmText">
+		<a class = "button fontChange closed" id="confirmText">
 		Confirm</a>
 		</div>
 		</center>
@@ -267,7 +272,7 @@ var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
+var close = document.getElementsByClassName("closed")[0];
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
@@ -278,6 +283,10 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+}
+
+close.onclick = function() {
+	modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

@@ -41,16 +41,13 @@
 }
 
 .dropbtn {
-  background-color: #E8E3E3;
-  color: black;
-  padding: 3px;
-  width: 300px;
-  font-size: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-color:black;
-
-  text-align: left;
+	background-color: #5ab1bb;
+	color: ffffff;
+	padding: 3px;
+	width: 300px;
+	font-size: 20px;
+	border: 0px;
+	text-align: center;
 }
 
 .dropbtn:hover{
@@ -66,12 +63,12 @@
 .inner-content {
   position: relative;
   display: block;
-  border-width:1px;
-  border-style:solid;
+  border:0px;
   margin-bottom: 2px;
   margin-top:2px;
   margin-left:10px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+  color: 1b1b1b;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   width:300px;
 }
@@ -122,17 +119,16 @@ a.button{
   margin-top:5px;
   margin-bottom:5px;
   margin-left:10px;
-  width:300px;
-  border-style:solid;
-  border-width:1px;
-  padding-top:5px;
-  padding-bottom:5px;
+  border: 0px;
   font-family: Montserrat, Verdana;
   font-size:14px;
 }
 
 #webAdd {
-  display:inline;
+	display:inline;
+	background-color: 5ab1bb;
+	color: ffffff;
+	border: 0px;
 }
 
 .checkBox {

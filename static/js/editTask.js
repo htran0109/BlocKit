@@ -88,7 +88,7 @@ function initialize() {
 			data: data,
 			success: function(reply) {
 				//html = html.substring(0, html.length - 6);
-				html = html + 	'<div class = "inner-content" id = "websiteOne">'+ reply.websites[reply['websites'].length-1]['title'];
+				html = html + 	'<div class = "inner-content" id = "website' + reply.websiteNumber + '">'+ reply.websites[reply['websites'].length-1]['title'];
 				html = html + '<input class = "checkBox" id = "checkBox' + reply.websiteNumber +'" type = "checkbox" checked onclick = "webCheck(' + reply.websiteNumber +')">';
 				html = html + '</input>';
 				html = html + '</div>';

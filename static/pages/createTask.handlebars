@@ -161,7 +161,7 @@
 		<p><center>Are you sure you want to cancel?</p>
 		
 		<div  class = "button" id = "deleteCancel">
-		<a href = "/createTask" class = "button fontChange" id="deleteText">
+		<a class = "button fontChange closed3" id="deleteText">
 		No</a>
 		</div>
 		
@@ -261,13 +261,15 @@ var btn3 = document.getElementById("myBtn3");
 
 // Get the <span> element that closes the modal
 var span3 = document.getElementsByClassName("close3")[0];
-
+var close3 = document.getElementsByClassName("closed3")[0];
 // When the user clicks on the button, open the modal 
 btn3.onclick = function() {
     modal3.style.display = "block";
 }
 
-
+close3.onclick = function() {
+	modal3.style.display = "none";
+}
 // When the user clicks on <span> (x), close the modal
 span3.onclick = function() {
     modal3.style.display = "none";
